@@ -1,0 +1,1237 @@
+# Test info
+
+- Name: IKEA Automation Tests >> Extract Wardrobe of Metal Type
+- Location: C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:58:9
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//span[@class="plp-category-filter__list-item-name" and text()="Storage solution systems"]')
+
+    at ProductPage.extractWardrobes (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\productPage.js:76:64)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:64:31
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:63:9
+```
+
+# Page snapshot
+
+```yaml
+- link "Skip to main content":
+  - /url: "#hnf-content"
+- banner:
+  - button "Change language or country/region, current language is English": INEnglish
+  - link "Delivery starts from Rs. 69":
+    - /url: https://www.ikea.com/in/en/cat/furniture-fu001/
+  - button "500001 - Enter postal code": "500001"
+  - button "Select store"
+  - link "IKEA Home":
+    - /url: https://www.ikea.com/in/en/
+  - search:
+    - combobox "Search for products, inspiration or new arrivals": Wardrobe
+    - button "Clear the search input field"
+    - button "Search"
+  - navigation:
+    - button "Hej! Log in"
+    - link "Shopping list":
+      - /url: https://www.ikea.com/in/en/favourites/
+    - link "Shopping bag":
+      - /url: https://www.ikea.com/in/en/shoppingcart/
+- tablist:
+  - tab "Shop products" [selected]
+  - tab "Shop by rooms"
+  - tab "Offers"
+  - tab "New at IKEA"
+  - tab "IKEA for Business"
+  - tab "Customer service"
+  - tab "Tips, ideas & trends"
+  - tab "More"
+- tabpanel:
+  - link "Skip listing":
+    - /url: "#hnf--carousel__tabs-navigation-products-skip-btn"
+  - button "Flat 15% off*"
+  - button "Furniture"
+  - button "Storage & organisation"
+  - button "Sofas & armchairs"
+  - button "Office furniture"
+  - button "Tables & chairs"
+  - button "Beds & mattresses"
+  - button "Modular kitchens"
+  - button "Home textiles"
+  - button "Kitchenware & tableware"
+  - button "Home Decor"
+  - button "Outdoor products"
+  - button "Lighting"
+  - button "Bathroom products"
+  - button "Baby & children"
+  - button "Rugs and mats"
+  - button "Laundry & cleaning"
+  - button "Pots & plants"
+  - button "Food & beverages"
+  - button "Home improvement"
+  - button "Smart home"
+  - button "Home electronics"
+  - button "Pet products"
+  - button "Christmas Collections"
+  - button "Small storage & organisers"
+- button "Start Chat":
+  - img
+- main:
+  - paragraph: Showing results for "Wardrobe". We found 36 products and 424 content results.
+  - paragraph:
+    - link "Flat 15% OFF + a ₹1000 voucher on furniture purchases above INR 20,000":
+      - /url: https://www.ikea.com/in/en/offers/
+  - heading "Showing results for \"Wardrobe\"" [level=1]: "\"Wardrobe\""
+  - link "34 products":
+    - /url: "#product-list"
+  - link "424 content results":
+    - /url: "#content-carousel"
+  - heading "Sort and Filter" [level=2]
+  - button "Sort"
+  - button "Size"
+  - button "Price"
+  - button "Type"
+  - button "Category"
+  - button "Colour"
+  - button "Material" [expanded]
+  - button "Doors"
+  - button "All filters"
+  - group "Material":
+    - text: Material Glass 12
+    - checkbox "Glass 12 products"
+    - text: Metal 8
+    - checkbox "Metal 8 products"
+  - heading "Results list" [level=2]
+  - link "KLEPPSTAD Wardrobe with sliding doors, white, 117x176 cm KLEPPSTAD Wardrobe with sliding doors, white, 117x176 cm":
+    - /url: https://www.ikea.com/in/en/p/kleppstad-wardrobe-with-sliding-doors-white-30437241/
+    - img "KLEPPSTAD Wardrobe with sliding doors, white, 117x176 cm"
+    - img "KLEPPSTAD Wardrobe with sliding doors, white, 117x176 cm"
+  - link "KLEPPSTAD Wardrobe with sliding doors, white, 117x176 cm (46 1/8x69 1/4 \") Price Rs. 14990 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/kleppstad-wardrobe-with-sliding-doors-white-30437241/
+    - heading "KLEPPSTAD Wardrobe with sliding doors, white, 117x176 cm (46 1/8x69 1/4 \")" [level=3]
+    - text: Price Rs. 14990 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 4.2 out of 5 stars. Total reviews: (435)"':
+    - 'img "Review: 4.2 out of 5 stars. Total reviews:"'
+    - text: (435)
+  - button "Add \"KLEPPSTAD Wardrobe with sliding doors\" to cart"
+  - button "Save \"KLEPPSTAD Wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - link "RAKKESTAD Wardrobe with sliding doors, black-brown, 117x176 cm RAKKESTAD Wardrobe with sliding doors, black-brown, 117x176 cm":
+    - /url: https://www.ikea.com/in/en/p/rakkestad-wardrobe-with-sliding-doors-black-brown-40453768/
+    - img "RAKKESTAD Wardrobe with sliding doors, black-brown, 117x176 cm"
+    - img "RAKKESTAD Wardrobe with sliding doors, black-brown, 117x176 cm"
+  - link "RAKKESTAD Wardrobe with sliding doors, black-brown, 117x176 cm (46 1/8x69 1/4 \") Price Rs. 16990 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/rakkestad-wardrobe-with-sliding-doors-black-brown-40453768/
+    - heading "RAKKESTAD Wardrobe with sliding doors, black-brown, 117x176 cm (46 1/8x69 1/4 \")" [level=3]
+    - text: Price Rs. 16990 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 4.1 out of 5 stars. Total reviews: (155)"':
+    - 'img "Review: 4.1 out of 5 stars. Total reviews:"'
+    - text: (155)
+  - button "Add \"RAKKESTAD Wardrobe with sliding doors\" to cart"
+  - button "Save \"RAKKESTAD Wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - link "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm PAX / HASVIK Wardrobe, white/white, 200x66x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s79489926/
+    - img "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm"
+    - img "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm"
+  - link "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm (78 3/4x26x79 1/4 \") Price Rs. 37700 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s79489926/
+    - heading "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm (78 3/4x26x79 1/4 \")" [level=3]
+    - text: Price Rs. 37700 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / HASVIK Wardrobe\" to cart"
+  - button "Save \"PAX / HASVIK Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / HASVIK":
+    - text: More options PAX / HASVIK
+    - 'radio "Option: PAX / HASVIK Wardrobe, white/white, 200x66x201 cm" [checked]'
+    - 'link "Option: PAX / HASVIK Wardrobe, white/white, 200x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s79489926/
+    - 'radio "Option: PAX / HASVIK Wardrobe, grey-beige/grey-beige, 200x66x201 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, grey-beige/grey-beige, 200x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-grey-beige-grey-beige-s59489932/
+    - 'radio "Option: PAX / HASVIK Wardrobe, white/high-gloss white, 200x66x236 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, white/high-gloss white, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-high-gloss-white-s29489900/
+    - 'radio "Option: PAX / HASVIK Wardrobe, white/white, 200x66x236 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, white/white, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s39489928/
+    - 'radio "Option: PAX / HASVIK Wardrobe, dark grey/dark grey, 200x66x236 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, dark grey/dark grey, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-dark-grey-dark-grey-s79435981/
+    - 'radio "Option: PAX / HASVIK Wardrobe, grey-beige/grey-beige, 200x66x236 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, grey-beige/grey-beige, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-grey-beige-grey-beige-s19489934/
+  - link "HAUGA Wardrobe with sliding doors, white, 118x55x199 cm HAUGA Wardrobe with sliding doors, white, 118x55x199 cm":
+    - /url: https://www.ikea.com/in/en/p/hauga-wardrobe-with-sliding-doors-white-40456917/
+    - img "HAUGA Wardrobe with sliding doors, white, 118x55x199 cm"
+    - img "HAUGA Wardrobe with sliding doors, white, 118x55x199 cm"
+  - link "HAUGA Wardrobe with sliding doors, white, 118x55x199 cm (46 1/2x21 5/8x78 3/8 \") Price Rs. 22990 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/hauga-wardrobe-with-sliding-doors-white-40456917/
+    - heading "HAUGA Wardrobe with sliding doors, white, 118x55x199 cm (46 1/2x21 5/8x78 3/8 \")" [level=3]
+    - text: Price Rs. 22990 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 4.3 out of 5 stars. Total reviews: (629)"':
+    - 'img "Review: 4.3 out of 5 stars. Total reviews:"'
+    - text: (629)
+  - button "Add \"HAUGA Wardrobe with sliding doors\" to cart"
+  - button "Save \"HAUGA Wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - group "More options HAUGA":
+    - text: More options HAUGA
+    - 'radio "Option: HAUGA Wardrobe with sliding doors, white, 118x55x199 cm" [checked]'
+    - 'link "Option: HAUGA Wardrobe with sliding doors, white, 118x55x199 cm"':
+      - /url: https://www.ikea.com/in/en/p/hauga-wardrobe-with-sliding-doors-white-40456917/
+    - 'radio "Option: HAUGA Wardrobe with sliding doors, beige, 118x55x199 cm"'
+    - 'link "Option: HAUGA Wardrobe with sliding doors, beige, 118x55x199 cm"':
+      - /url: https://www.ikea.com/in/en/p/hauga-wardrobe-with-sliding-doors-beige-10456914/
+  - link "PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x201 cm PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-auli-wardrobe-with-sliding-doors-white-double-sided-light-green-mirror-glass-s49551731/
+    - img "PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x201 cm"
+    - img "PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x201 cm"
+  - link "PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x201 cm (78 3/4x26x79 1/4 \") Price Rs. 40600 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-auli-wardrobe-with-sliding-doors-white-double-sided-light-green-mirror-glass-s49551731/
+    - heading "PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x201 cm (78 3/4x26x79 1/4 \")" [level=3]
+    - text: Price Rs. 40600 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 5 out of 5 stars. Total reviews: (1)"':
+    - 'img "Review: 5 out of 5 stars. Total reviews:"'
+    - text: (1)
+  - button "Add \"PAX / MEHAMN/AULI Wardrobe with sliding doors\" to cart"
+  - button "Save \"PAX / MEHAMN/AULI Wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / MEHAMN/AULI":
+    - text: More options PAX / MEHAMN/AULI
+    - 'radio "Option: PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x201 cm" [checked]'
+    - 'link "Option: PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-mehamn-auli-wardrobe-with-sliding-doors-white-double-sided-light-green-mirror-glass-s49551731/
+    - 'radio "Option: PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x236 cm"'
+    - 'link "Option: PAX / MEHAMN/AULI Wardrobe with sliding doors, white double sided/light green mirror glass, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-mehamn-auli-wardrobe-with-sliding-doors-white-double-sided-light-green-mirror-glass-s89551734/
+    - 'radio "Option: PAX / MEHAMN/AULI Wardrobe with sliding doors, white stained oak effect double sided/light green mirror glass, 200x66x236 cm"'
+    - 'link "Option: PAX / MEHAMN/AULI Wardrobe with sliding doors, white stained oak effect double sided/light green mirror glass, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-mehamn-auli-wardrobe-with-sliding-doors-white-stained-oak-effect-double-sided-light-green-mirror-glass-s99551724/
+  - link "PAX / HASVIK Wardrobe, white/white, 150x66x201 cm PAX / HASVIK Wardrobe, white/white, 150x66x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s19429756/
+    - img "PAX / HASVIK Wardrobe, white/white, 150x66x201 cm"
+    - img "PAX / HASVIK Wardrobe, white/white, 150x66x201 cm"
+  - link "PAX / HASVIK Wardrobe, white/white, 150x66x201 cm (59x26x79 1/4 \") Price Rs. 32000 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s19429756/
+    - heading "PAX / HASVIK Wardrobe, white/white, 150x66x201 cm (59x26x79 1/4 \")" [level=3]
+    - text: Price Rs. 32000 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / HASVIK Wardrobe\" to cart"
+  - button "Save \"PAX / HASVIK Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / HASVIK":
+    - text: More options PAX / HASVIK
+    - 'radio "Option: PAX / HASVIK Wardrobe, white/white, 150x66x201 cm" [checked]'
+    - 'link "Option: PAX / HASVIK Wardrobe, white/white, 150x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s19429756/
+    - 'radio "Option: PAX / HASVIK Wardrobe, grey-beige/grey-beige, 150x66x201 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, grey-beige/grey-beige, 150x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-grey-beige-grey-beige-s29435974/
+    - 'radio "Option: PAX / HASVIK Wardrobe, grey-beige/grey-beige, 150x66x236 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, grey-beige/grey-beige, 150x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-grey-beige-grey-beige-s79435976/
+    - 'radio "Option: PAX / HASVIK Wardrobe, white/white, 150x66x236 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, white/white, 150x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s89429753/
+    - 'radio "Option: PAX / HASVIK Wardrobe, dark grey/dark grey, 150x66x201 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, dark grey/dark grey, 150x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-dark-grey-dark-grey-s79499317/
+    - 'radio "Option: PAX / HASVIK Wardrobe, dark grey/dark grey, 150x66x236 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, dark grey/dark grey, 150x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-dark-grey-dark-grey-s59499318/
+  - link "SKYTTA / PAX Walk-in wardrobe with sliding doors, black/Hokksund high-gloss light grey, 226x160x240 cm SKYTTA / PAX Walk-in wardrobe with sliding doors, black/Hokksund high-gloss light grey, 226x160x240 cm":
+    - /url: https://www.ikea.com/in/en/p/skytta-pax-walk-in-wardrobe-with-sliding-doors-black-hokksund-high-gloss-light-grey-s49528137/
+    - img "SKYTTA / PAX Walk-in wardrobe with sliding doors, black/Hokksund high-gloss light grey, 226x160x240 cm"
+    - img "SKYTTA / PAX Walk-in wardrobe with sliding doors, black/Hokksund high-gloss light grey, 226x160x240 cm"
+  - link "SKYTTA / PAX Walk-in wardrobe with sliding doors, black/Hokksund high-gloss light grey, 226x160x240 cm (89x63x94 1/2 \") Price Rs. 90400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/skytta-pax-walk-in-wardrobe-with-sliding-doors-black-hokksund-high-gloss-light-grey-s49528137/
+    - heading "SKYTTA / PAX Walk-in wardrobe with sliding doors, black/Hokksund high-gloss light grey, 226x160x240 cm (89x63x94 1/2 \")" [level=3]
+    - text: Price Rs. 90400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"SKYTTA / PAX Walk-in wardrobe with sliding doors\" to cart"
+  - button "Save \"SKYTTA / PAX Walk-in wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - link "PAX / GRIMO Wardrobe combination, white/white, 200x66x236 cm PAX / GRIMO Wardrobe combination, white/white, 200x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s79432973/
+    - img "PAX / GRIMO Wardrobe combination, white/white, 200x66x236 cm"
+    - img "PAX / GRIMO Wardrobe combination, white/white, 200x66x236 cm"
+  - link "PAX / GRIMO Wardrobe combination, white/white, 200x66x236 cm (78 3/4x26x93 1/8 \") Price Rs. 46900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s79432973/
+    - heading "PAX / GRIMO Wardrobe combination, white/white, 200x66x236 cm (78 3/4x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 46900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 3.3 out of 5 stars. Total reviews: (3)"':
+    - 'img "Review: 3.3 out of 5 stars. Total reviews:"'
+    - text: (3)
+  - button "Add \"PAX / GRIMO Wardrobe combination\" to cart"
+  - button "Save \"PAX / GRIMO Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / GRIMO":
+    - text: More options PAX / GRIMO
+    - 'radio "Option: PAX / GRIMO Wardrobe combination, white/white, 200x66x236 cm" [checked]'
+    - 'link "Option: PAX / GRIMO Wardrobe combination, white/white, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s79432973/
+    - 'radio "Option: PAX / GRIMO Wardrobe combination, white/white, 200x66x201 cm"'
+    - 'link "Option: PAX / GRIMO Wardrobe combination, white/white, 200x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s19432971/
+  - link "Planner Design your own PAX wardrobe":
+    - /url: https://www.ikea.com/addon-app/storageone/pax/web/latest/in/en/
+    - paragraph: Planner
+    - paragraph: Design your own PAX wardrobe
+  - link "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-auli-wardrobe-with-sliding-doors-white-mirror-glass-s19561307/
+    - img "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm"
+    - img "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm"
+  - link "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm (59x26x79 1/4 \") Price Rs. 37000 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-auli-wardrobe-with-sliding-doors-white-mirror-glass-s19561307/
+    - heading "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm (59x26x79 1/4 \")" [level=3]
+    - text: Price Rs. 37000 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / AULI Wardrobe with sliding doors\" to cart"
+  - button "Save \"PAX / AULI Wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / AULI":
+    - text: More options PAX / AULI
+    - 'radio "Option: PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm" [checked]'
+    - 'link "Option: PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-auli-wardrobe-with-sliding-doors-white-mirror-glass-s19561307/
+    - 'radio "Option: PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x236 cm"'
+    - 'link "Option: PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-auli-wardrobe-with-sliding-doors-white-mirror-glass-s79561309/
+  - link "PAX / HASVIK Wardrobe combination, white/white, 150x66x236 cm PAX / HASVIK Wardrobe combination, white/white, 150x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-combination-white-white-s89500971/
+    - img "PAX / HASVIK Wardrobe combination, white/white, 150x66x236 cm"
+    - img "PAX / HASVIK Wardrobe combination, white/white, 150x66x236 cm"
+  - link "PAX / HASVIK Wardrobe combination, white/white, 150x66x236 cm (59x26x93 1/8 \") Price Rs. 37600 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-combination-white-white-s89500971/
+    - heading "PAX / HASVIK Wardrobe combination, white/white, 150x66x236 cm (59x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 37600 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 4.8 out of 5 stars. Total reviews: (13)"':
+    - 'img "Review: 4.8 out of 5 stars. Total reviews:"'
+    - text: (13)
+  - button "Add \"PAX / HASVIK Wardrobe combination\" to cart"
+  - button "Save \"PAX / HASVIK Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / HASVIK":
+    - text: More options PAX / HASVIK
+    - 'radio "Option: PAX / HASVIK Wardrobe combination, white/white, 150x66x236 cm" [checked]'
+    - 'link "Option: PAX / HASVIK Wardrobe combination, white/white, 150x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-combination-white-white-s89500971/
+    - 'radio "Option: PAX / HASVIK Wardrobe combination, white/white, 150x66x201 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe combination, white/white, 150x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-combination-white-white-s89500966/
+  - link "PAX / MEHAMN Wardrobe combination, dark grey/double sided dark grey, 200x66x236 cm PAX / MEHAMN Wardrobe combination, dark grey/double sided dark grey, 200x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-wardrobe-combination-dark-grey-double-sided-dark-grey-s89432369/
+    - img "PAX / MEHAMN Wardrobe combination, dark grey/double sided dark grey, 200x66x236 cm"
+    - img "PAX / MEHAMN Wardrobe combination, dark grey/double sided dark grey, 200x66x236 cm"
+  - link "PAX / MEHAMN Wardrobe combination, dark grey/double sided dark grey, 200x66x236 cm (78 3/4x26x93 1/8 \") Price Rs. 52800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-wardrobe-combination-dark-grey-double-sided-dark-grey-s89432369/
+    - heading "PAX / MEHAMN Wardrobe combination, dark grey/double sided dark grey, 200x66x236 cm (78 3/4x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 52800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 5 out of 5 stars. Total reviews: (1)"':
+    - 'img "Review: 5 out of 5 stars. Total reviews:"'
+    - text: (1)
+  - button "Add \"PAX / MEHAMN Wardrobe combination\" to cart"
+  - button "Save \"PAX / MEHAMN Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - link "PAX / SVARTISDAL Wardrobe combination, dark grey/white paper effect, 200x66x236 cm PAX / SVARTISDAL Wardrobe combination, dark grey/white paper effect, 200x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-svartisdal-wardrobe-combination-dark-grey-white-paper-effect-s39521042/
+    - img "PAX / SVARTISDAL Wardrobe combination, dark grey/white paper effect, 200x66x236 cm"
+    - img "PAX / SVARTISDAL Wardrobe combination, dark grey/white paper effect, 200x66x236 cm"
+  - link "PAX / SVARTISDAL Wardrobe combination, dark grey/white paper effect, 200x66x236 cm (78 3/4x26x93 1/8 \") Price Rs. 80050 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-svartisdal-wardrobe-combination-dark-grey-white-paper-effect-s39521042/
+    - heading "PAX / SVARTISDAL Wardrobe combination, dark grey/white paper effect, 200x66x236 cm (78 3/4x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 80050 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / SVARTISDAL Wardrobe combination\" to cart"
+  - button "Save \"PAX / SVARTISDAL Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / SVARTISDAL":
+    - text: More options PAX / SVARTISDAL
+    - 'radio "Option: PAX / SVARTISDAL Wardrobe combination, dark grey/white paper effect, 200x66x236 cm" [checked]'
+    - 'link "Option: PAX / SVARTISDAL Wardrobe combination, dark grey/white paper effect, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-svartisdal-wardrobe-combination-dark-grey-white-paper-effect-s39521042/
+    - 'radio "Option: PAX / SVARTISDAL Wardrobe combination, white/white paper effect, 200x66x201 cm"'
+    - 'link "Option: PAX / SVARTISDAL Wardrobe combination, white/white paper effect, 200x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-svartisdal-wardrobe-combination-white-white-paper-effect-s79521040/
+    - 'radio "Option: PAX / SVARTISDAL Wardrobe with sliding doors, white/white paper effect, 200x66x236 cm"'
+    - 'link "Option: PAX / SVARTISDAL Wardrobe with sliding doors, white/white paper effect, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-svartisdal-wardrobe-with-sliding-doors-white-white-paper-effect-s19521043/
+  - link "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-with-sliding-doors-white-clear-glass-white-s99502267/
+    - img "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm"
+    - img "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm"
+  - link "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm (78 3/4x26x93 1/8 \") Price Rs. 51900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-with-sliding-doors-white-clear-glass-white-s99502267/
+    - heading "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm (78 3/4x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 51900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 3 out of 5 stars. Total reviews: (6)"':
+    - 'img "Review: 3 out of 5 stars. Total reviews:"'
+    - text: (6)
+  - button "Add \"PAX / GRIMO Wardrobe with sliding doors\" to cart"
+  - button "Save \"PAX / GRIMO Wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - link "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm PAX / GRIMO Wardrobe, white/white, 150x66x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-white-white-s99502371/
+    - img "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm"
+    - img "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm"
+  - link "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm (59x26x79 1/4 \") Price Rs. 39800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-white-white-s99502371/
+    - heading "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm (59x26x79 1/4 \")" [level=3]
+    - text: Price Rs. 39800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / GRIMO Wardrobe\" to cart"
+  - button "Save \"PAX / GRIMO Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / GRIMO":
+    - text: More options PAX / GRIMO
+    - 'radio "Option: PAX / GRIMO Wardrobe, white/white, 150x66x201 cm" [checked]'
+    - 'link "Option: PAX / GRIMO Wardrobe, white/white, 150x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-white-white-s99502371/
+    - 'radio "Option: PAX / GRIMO Wardrobe, white/white, 150x66x236 cm"'
+    - 'link "Option: PAX / GRIMO Wardrobe, white/white, 150x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-white-white-s39502369/
+  - link "PAX / MEHAMN Wardrobe, double sided dark grey/grey-beige, 150x66x236 cm PAX / MEHAMN Wardrobe, double sided dark grey/grey-beige, 150x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-wardrobe-double-sided-dark-grey-grey-beige-s89433199/
+    - img "PAX / MEHAMN Wardrobe, double sided dark grey/grey-beige, 150x66x236 cm"
+    - img "PAX / MEHAMN Wardrobe, double sided dark grey/grey-beige, 150x66x236 cm"
+  - link "PAX / MEHAMN Wardrobe, double sided dark grey/grey-beige, 150x66x236 cm (59x26x93 1/8 \") Price Rs. 47800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-wardrobe-double-sided-dark-grey-grey-beige-s89433199/
+    - heading "PAX / MEHAMN Wardrobe, double sided dark grey/grey-beige, 150x66x236 cm (59x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 47800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / MEHAMN Wardrobe\" to cart"
+  - button "Save \"PAX / MEHAMN Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - link "SKYTTA / PAX Walk-in wardrobe with sliding doors, white double sided/Mehamn light green, 226x160x240 cm":
+    - /url: https://www.ikea.com/in/en/p/skytta-pax-walk-in-wardrobe-with-sliding-doors-white-double-sided-mehamn-light-green-s79552507/
+    - img "SKYTTA / PAX Walk-in wardrobe with sliding doors, white double sided/Mehamn light green, 226x160x240 cm"
+  - link "SKYTTA / PAX Walk-in wardrobe with sliding doors, white double sided/Mehamn light green, 226x160x240 cm (89x63x94 1/2 \") Price Rs. 80400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/skytta-pax-walk-in-wardrobe-with-sliding-doors-white-double-sided-mehamn-light-green-s79552507/
+    - heading "SKYTTA / PAX Walk-in wardrobe with sliding doors, white double sided/Mehamn light green, 226x160x240 cm (89x63x94 1/2 \")" [level=3]
+    - text: Price Rs. 80400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"SKYTTA / PAX Walk-in wardrobe with sliding doors\" to cart"
+  - button "Save \"SKYTTA / PAX Walk-in wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - group "More options SKYTTA / PAX":
+    - text: More options SKYTTA / PAX
+    - 'radio "Option: SKYTTA / PAX Walk-in wardrobe with sliding doors, white double sided/Mehamn light green, 226x160x240 cm" [checked]'
+    - 'link "Option: SKYTTA / PAX Walk-in wardrobe with sliding doors, white double sided/Mehamn light green, 226x160x240 cm"':
+      - /url: https://www.ikea.com/in/en/p/skytta-pax-walk-in-wardrobe-with-sliding-doors-white-double-sided-mehamn-light-green-s79552507/
+    - 'radio "Option: SKYTTA / PAX Walk-in wardrobe with sliding doors, black dark grey/Mehamn light green, 226x160x240 cm"'
+    - 'link "Option: SKYTTA / PAX Walk-in wardrobe with sliding doors, black dark grey/Mehamn light green, 226x160x240 cm"':
+      - /url: https://www.ikea.com/in/en/p/skytta-pax-walk-in-wardrobe-with-sliding-doors-black-dark-grey-mehamn-light-green-s09552501/
+  - link "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-auli-wardrobe-with-sliding-doors-white-mirror-glass-s39561349/
+    - img "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm"
+    - img "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm"
+  - link "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm (59x26x79 1/4 \") Price Rs. 36200 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-auli-wardrobe-with-sliding-doors-white-mirror-glass-s39561349/
+    - heading "PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm (59x26x79 1/4 \")" [level=3]
+    - text: Price Rs. 36200 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 5 out of 5 stars. Total reviews: (2)"':
+    - 'img "Review: 5 out of 5 stars. Total reviews:"'
+    - text: (2)
+  - button "Add \"PAX / AULI Wardrobe with sliding doors\" to cart"
+  - button "Save \"PAX / AULI Wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / AULI":
+    - text: More options PAX / AULI
+    - 'radio "Option: PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm" [checked]'
+    - 'link "Option: PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-auli-wardrobe-with-sliding-doors-white-mirror-glass-s39561349/
+    - 'radio "Option: PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x236 cm"'
+    - 'link "Option: PAX / AULI Wardrobe with sliding doors, white/mirror glass, 150x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-auli-wardrobe-with-sliding-doors-white-mirror-glass-s59561353/
+  - link "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm PAX / HASVIK Wardrobe, white/white, 200x66x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s29432372/
+    - img "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm"
+    - img "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm"
+  - link "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm (78 3/4x26x79 1/4 \") Price Rs. 36800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s29432372/
+    - heading "PAX / HASVIK Wardrobe, white/white, 200x66x201 cm (78 3/4x26x79 1/4 \")" [level=3]
+    - text: Price Rs. 36800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 4.8 out of 5 stars. Total reviews: (4)"':
+    - 'img "Review: 4.8 out of 5 stars. Total reviews:"'
+    - text: (4)
+  - button "Add \"PAX / HASVIK Wardrobe\" to cart"
+  - button "Save \"PAX / HASVIK Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / HASVIK":
+    - text: More options PAX / HASVIK
+    - 'radio "Option: PAX / HASVIK Wardrobe, white/white, 200x66x201 cm" [checked]'
+    - 'link "Option: PAX / HASVIK Wardrobe, white/white, 200x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s29432372/
+    - 'radio "Option: PAX / HASVIK Wardrobe, white/white, 200x66x236 cm"'
+    - 'link "Option: PAX / HASVIK Wardrobe, white/white, 200x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-hasvik-wardrobe-white-white-s59432375/
+  - link "IKEA Kreativ Compare armoires & wardrobes to find your fit":
+    - /url: https://www.ikea.com/in/en/home-design/#value-prop
+    - paragraph: IKEA Kreativ
+    - paragraph: Compare armoires & wardrobes to find your fit
+  - link "PAX / HOKKSUND Wardrobe combination, white/high-gloss light grey, 200x66x236 cm PAX / HOKKSUND Wardrobe combination, white/high-gloss light grey, 200x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-hokksund-wardrobe-combination-white-high-gloss-light-grey-s89433302/
+    - img "PAX / HOKKSUND Wardrobe combination, white/high-gloss light grey, 200x66x236 cm"
+    - img "PAX / HOKKSUND Wardrobe combination, white/high-gloss light grey, 200x66x236 cm"
+  - link "PAX / HOKKSUND Wardrobe combination, white/high-gloss light grey, 200x66x236 cm (78 3/4x26x93 1/8 \") Price Rs. 66300 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-hokksund-wardrobe-combination-white-high-gloss-light-grey-s89433302/
+    - heading "PAX / HOKKSUND Wardrobe combination, white/high-gloss light grey, 200x66x236 cm (78 3/4x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 66300 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / HOKKSUND Wardrobe combination\" to cart"
+  - button "Save \"PAX / HOKKSUND Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - link "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm PAX / GRIMO Wardrobe, white/white, 150x66x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-white-white-s19429780/
+    - img "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm"
+    - img "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm"
+  - link "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm (59x26x79 1/4 \") Price Rs. 34000 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-white-white-s19429780/
+    - heading "PAX / GRIMO Wardrobe, white/white, 150x66x201 cm (59x26x79 1/4 \")" [level=3]
+    - text: Price Rs. 34000 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / GRIMO Wardrobe\" to cart"
+  - button "Save \"PAX / GRIMO Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / GRIMO":
+    - text: More options PAX / GRIMO
+    - 'radio "Option: PAX / GRIMO Wardrobe, white/white, 150x66x201 cm" [checked]'
+    - 'link "Option: PAX / GRIMO Wardrobe, white/white, 150x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-white-white-s19429780/
+    - 'radio "Option: PAX / GRIMO Wardrobe, white/white, 150x66x236 cm"'
+    - 'link "Option: PAX / GRIMO Wardrobe, white/white, 150x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-white-white-s79429782/
+  - link "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-with-sliding-doors-white-clear-glass-white-s69502259/
+    - img "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm"
+    - img "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm"
+  - link "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm (78 3/4x26x93 1/8 \") Price Rs. 56400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-with-sliding-doors-white-clear-glass-white-s69502259/
+    - heading "PAX / GRIMO Wardrobe with sliding doors, white/clear glass white, 200x66x236 cm (78 3/4x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 56400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / GRIMO Wardrobe with sliding doors\" to cart"
+  - button "Save \"PAX / GRIMO Wardrobe with sliding doors\" to shopping list"
+  - text: Available for delivery
+  - link "PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x236 cm PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-wardrobe-combination-grey-beige-double-sided-grey-beige-s69432964/
+    - img "PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x236 cm"
+    - img "PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x236 cm"
+  - link "PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x236 cm (59x26x93 1/8 \") Price Rs. 48000 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-wardrobe-combination-grey-beige-double-sided-grey-beige-s69432964/
+    - heading "PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x236 cm (59x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 48000 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / MEHAMN Wardrobe combination\" to cart"
+  - button "Save \"PAX / MEHAMN Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / MEHAMN":
+    - text: More options PAX / MEHAMN
+    - 'radio "Option: PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x236 cm" [checked]'
+    - 'link "Option: PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-mehamn-wardrobe-combination-grey-beige-double-sided-grey-beige-s69432964/
+    - 'radio "Option: PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x201 cm"'
+    - 'link "Option: PAX / MEHAMN Wardrobe combination, grey-beige/double sided grey-beige, 150x66x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-mehamn-wardrobe-combination-grey-beige-double-sided-grey-beige-s89432963/
+  - text: Showing 24 of 36 results
+  - progressbar
+  - link "Show more products":
+    - /url: https://www.ikea.com/in/en/search/?q=Wardrobe&page=2#products-page-2
+    - text: Show more
+  - heading "Related Content" [level=2]
+  - paragraph: 424 content results
+  - link "Skip listing":
+    - /url: "#plp--carousel__content-shelf-carousel-skip-btn"
+  - link "Planner Design your own PAX wardrobe":
+    - /url: https://www.ikea.com/addon-app/storageone/pax/web/latest/in/en/
+    - paragraph: Planner
+    - paragraph: Design your own PAX wardrobe
+  - link "Guiding Try our Storage Guide.":
+    - /url: https://www.ikea.com/addon-app/guida/storage-guide/web/latest/in/en/
+    - paragraph: Guiding
+    - paragraph: Try our Storage Guide.
+  - link "IKEA Kreativ Compare armoires & wardrobes to find your fit":
+    - /url: https://www.ikea.com/in/en/home-design/#value-prop
+    - paragraph: IKEA Kreativ
+    - paragraph: Compare armoires & wardrobes to find your fit
+  - link "Category Wardrobes":
+    - /url: https://www.ikea.com/in/en/cat/wardrobes-19053/
+    - paragraph: Category
+    - paragraph: Wardrobes
+  - link "Category PAX system":
+    - /url: https://www.ikea.com/in/en/cat/pax-system-19086/
+    - paragraph: Category
+    - paragraph: PAX system
+  - link "Category Wardrobe scents":
+    - /url: https://www.ikea.com/in/en/cat/wardrobe-scents-58411/
+    - paragraph: Category
+    - paragraph: Wardrobe scents
+  - link "Category Corner wardrobes":
+    - /url: https://www.ikea.com/in/en/cat/corner-wardrobes-43636/
+    - paragraph: Category
+    - paragraph: Corner wardrobes
+  - link "Category Hinged door wardrobes":
+    - /url: https://www.ikea.com/in/en/cat/hinged-wardrobes-48005/
+    - paragraph: Category
+    - paragraph: Hinged door wardrobes
+  - link "Category Children's wardrobes":
+    - /url: https://www.ikea.com/in/en/cat/childrens-wardrobes-18707/
+    - paragraph: Category
+    - paragraph: Children's wardrobes
+  - link "Page Wardrobes in Mumbai":
+    - /url: https://www.ikea.com/in/en/stores/mumbai/wardrobes-in-mumbai-pubbb705620/
+    - paragraph: Page
+    - paragraph: Wardrobes in Mumbai
+  - link "Category PAX doors without hinges":
+    - /url: https://www.ikea.com/in/en/cat/pax-doors-without-hinges-40206/
+    - paragraph: Category
+    - paragraph: PAX doors without hinges
+  - link "Room Beautiful belongings deserve beautiful storage":
+    - /url: https://www.ikea.com/in/en/rooms/bedroom/gallery/beautiful-belongings-deserve-beautiful-storage-pubdcb87251/
+    - paragraph: Room
+    - paragraph: Beautiful belongings deserve beautiful storage
+  - heading "Similar products" [level=2]
+  - link "Skip listing":
+    - /url: "#plp--carousel__similar-product-carousel-skip-btn"
+  - link "PAX / MEHAMN/AULI Wardrobe combination, dark grey double sided/dark grey mirror glass, 200x66x236 cm PAX / MEHAMN/AULI Wardrobe combination, dark grey double sided/dark grey mirror glass, 200x66x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-auli-wardrobe-combination-dark-grey-double-sided-dark-grey-mirror-glass-s39561368/
+    - img "PAX / MEHAMN/AULI Wardrobe combination, dark grey double sided/dark grey mirror glass, 200x66x236 cm"
+    - img "PAX / MEHAMN/AULI Wardrobe combination, dark grey double sided/dark grey mirror glass, 200x66x236 cm"
+  - link "PAX / MEHAMN/AULI Wardrobe combination, dark grey double sided/dark grey mirror glass, 200x66x236 cm (78 3/4x26x93 1/8 \") Price Rs. 47900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-mehamn-auli-wardrobe-combination-dark-grey-double-sided-dark-grey-mirror-glass-s39561368/
+    - heading "PAX / MEHAMN/AULI Wardrobe combination, dark grey double sided/dark grey mirror glass, 200x66x236 cm (78 3/4x26x93 1/8 \")" [level=3]
+    - text: Price Rs. 47900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 5 out of 5 stars. Total reviews: (1)"':
+    - 'img "Review: 5 out of 5 stars. Total reviews:"'
+    - text: (1)
+  - button "Add \"PAX / MEHAMN/AULI Wardrobe combination\" to cart"
+  - button "Save \"PAX / MEHAMN/AULI Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - link "PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s79515402/
+    - img "PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm"
+  - link "PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm (59x23 5/8x79 1/4 \") Price Rs. 64750 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s79515402/
+    - heading "PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm (59x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 64750 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / FARDAL/ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / FARDAL/ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FARDAL/ÅHEIM":
+    - text: More options PAX / FARDAL/ÅHEIM
+    - 'radio "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm" [checked]'
+    - 'link "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s79515402/
+    - 'radio "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x236 cm"'
+    - 'link "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s39515404/
+  - link "PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x201 cm PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-high-gloss-white-mirror-glass-s09395573/
+    - img "PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x201 cm"
+    - img "PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x201 cm"
+  - link "PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x201 cm (59x23 5/8x79 1/4 \") Price Rs. 52900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-high-gloss-white-mirror-glass-s09395573/
+    - heading "PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x201 cm (59x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 52900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / FARDAL/ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / FARDAL/ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FARDAL/ÅHEIM":
+    - text: More options PAX / FARDAL/ÅHEIM
+    - 'radio "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x201 cm" [checked]'
+    - 'link "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-high-gloss-white-mirror-glass-s09395573/
+    - 'radio "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x236 cm"'
+    - 'link "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, high-gloss white/mirror glass, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-high-gloss-white-mirror-glass-s59395575/
+  - link "PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x236 cm PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s99395677/
+    - img "PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x236 cm"
+    - img "PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x236 cm"
+  - link "PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x236 cm (78 3/4x23 5/8x93 1/8 \") Price Rs. 66400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s99395677/
+    - heading "PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x236 cm (78 3/4x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 66400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / FARDAL/ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / FARDAL/ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FARDAL/ÅHEIM":
+    - text: More options PAX / FARDAL/ÅHEIM
+    - 'radio "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x236 cm" [checked]'
+    - 'link "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s99395677/
+    - 'radio "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x201 cm"'
+    - 'link "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white high-gloss/white mirror glass, 200x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s39395675/
+  - link "PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s99336150/
+    - img "PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm"
+    - img "PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm"
+  - link "PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm (59x23 5/8x79 1/4 \") Price Rs. 48300 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s99336150/
+    - heading "PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm (59x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 48300 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / FARDAL/ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / FARDAL/ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FARDAL/ÅHEIM":
+    - text: More options PAX / FARDAL/ÅHEIM
+    - 'radio "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm" [checked]'
+    - 'link "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s99336150/
+    - 'radio "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x236 cm"'
+    - 'link "Option: PAX / FARDAL/ÅHEIM Wardrobe combination, white/high-gloss/white mirror glass, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-aheim-wardrobe-combination-white-high-gloss-white-mirror-glass-s69336161/
+  - link "PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x236 cm PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-reinsvoll-aheim-wardrobe-combination-white-grey-beige-s89419947/
+    - img "PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x236 cm"
+    - img "PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x236 cm"
+  - link "PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x236 cm (78 3/4x23 5/8x93 1/8 \") Price Rs. 110250 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-reinsvoll-aheim-wardrobe-combination-white-grey-beige-s89419947/
+    - heading "PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x236 cm (78 3/4x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 110250 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / REINSVOLL/ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / REINSVOLL/ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / REINSVOLL/ÅHEIM":
+    - text: More options PAX / REINSVOLL/ÅHEIM
+    - 'radio "Option: PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x236 cm" [checked]'
+    - 'link "Option: PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-reinsvoll-aheim-wardrobe-combination-white-grey-beige-s89419947/
+    - 'radio "Option: PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x201 cm"'
+    - 'link "Option: PAX / REINSVOLL/ÅHEIM Wardrobe combination, white/grey-beige, 200x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-reinsvoll-aheim-wardrobe-combination-white-grey-beige-s29419945/
+  - link "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s39396175/
+    - img "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm"
+    - img "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm"
+  - link "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm (59x23 5/8x93 1/8 \") Price Rs. 45500 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s39396175/
+    - heading "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm (59x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 45500 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / ÅHEIM":
+    - text: More options PAX / ÅHEIM
+    - 'radio "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm" [checked]'
+    - 'link "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s39396175/
+    - 'radio "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm"'
+    - 'link "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s09396172/
+  - link "PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x236 cm PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-dark-grey-mirror-glass-s19429822/
+    - img "PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x236 cm"
+    - img "PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x236 cm"
+  - link "PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x236 cm (59x23 5/8x93 1/8 \") Price Rs. 38400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-dark-grey-mirror-glass-s19429822/
+    - heading "PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x236 cm (59x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 38400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / FORSAND/ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / FORSAND/ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FORSAND/ÅHEIM":
+    - text: More options PAX / FORSAND/ÅHEIM
+    - 'radio "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x236 cm" [checked]'
+    - 'link "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-dark-grey-mirror-glass-s19429822/
+    - 'radio "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm"'
+    - 'link "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-white-mirror-glass-s99553643/
+    - 'radio "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm"'
+    - 'link "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-white-mirror-glass-s89553648/
+    - 'radio "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x201 cm"'
+    - 'link "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, dark grey/mirror glass, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-dark-grey-mirror-glass-s59429820/
+    - 'radio "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, grey-beige/mirror glass, 150x60x236 cm"'
+    - 'link "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, grey-beige/mirror glass, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-grey-beige-mirror-glass-s49429849/
+    - 'radio "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, grey-beige/mirror glass, 150x60x201 cm"'
+    - 'link "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, grey-beige/mirror glass, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-grey-beige-mirror-glass-s89429847/
+  - link "PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x236 cm PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-wardrobe-white-high-gloss-white-s99303499/
+    - img "PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x236 cm"
+    - img "PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x236 cm"
+  - link "PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x236 cm (59x23 5/8x93 1/8 \") Price Rs. 66100 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-fardal-wardrobe-white-high-gloss-white-s99303499/
+    - heading "PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x236 cm (59x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 66100 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / FARDAL Wardrobe\" to cart"
+  - button "Save \"PAX / FARDAL Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FARDAL":
+    - text: More options PAX / FARDAL
+    - 'radio "Option: PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x236 cm" [checked]'
+    - 'link "Option: PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-wardrobe-white-high-gloss-white-s99303499/
+    - 'radio "Option: PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x201 cm"'
+    - 'link "Option: PAX / FARDAL Wardrobe, white/high-gloss/white, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-fardal-wardrobe-white-high-gloss-white-s29303501/
+  - link "PAX / VIKANES Wardrobe combination, white/white, 150x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-vikanes-wardrobe-combination-white-white-s49515366/
+    - img "PAX / VIKANES Wardrobe combination, white/white, 150x60x236 cm"
+  - link "PAX / VIKANES Wardrobe combination, white/white, 150x60x236 cm (59x23 5/8x93 1/8 \") Price Rs. 59300 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-vikanes-wardrobe-combination-white-white-s49515366/
+    - heading "PAX / VIKANES Wardrobe combination, white/white, 150x60x236 cm (59x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 59300 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / VIKANES Wardrobe combination\" to cart"
+  - button "Save \"PAX / VIKANES Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - link "PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x201 cm PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-white-mirror-glass-s69431177/
+    - img "PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x201 cm"
+    - img "PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x201 cm"
+  - link "PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x201 cm (29 1/2x23 5/8x79 1/4 \") Price Rs. 29600 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-white-mirror-glass-s69431177/
+    - heading "PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x201 cm (29 1/2x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 29600 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / FORSAND/ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / FORSAND/ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FORSAND/ÅHEIM":
+    - text: More options PAX / FORSAND/ÅHEIM
+    - 'radio "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x201 cm" [checked]'
+    - 'link "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-white-mirror-glass-s69431177/
+    - 'radio "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x236 cm"'
+    - 'link "Option: PAX / FORSAND/ÅHEIM Wardrobe combination, white/mirror glass, 75x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-aheim-wardrobe-combination-white-mirror-glass-s29431179/
+  - link "PAX / FORSAND Wardrobe, white/white, 250x60x201 cm PAX / FORSAND Wardrobe, white/white, 250x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-white-white-s59478085/
+    - img "PAX / FORSAND Wardrobe, white/white, 250x60x201 cm"
+    - img "PAX / FORSAND Wardrobe, white/white, 250x60x201 cm"
+  - link "PAX / FORSAND Wardrobe, white/white, 250x60x201 cm (98 3/8x23 5/8x79 1/4 \") Price Rs. 49100 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-white-white-s59478085/
+    - heading "PAX / FORSAND Wardrobe, white/white, 250x60x201 cm (98 3/8x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 49100 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 1 out of 5 stars. Total reviews: (1)"':
+    - 'img "Review: 1 out of 5 stars. Total reviews:"'
+    - text: (1)
+  - button "Add \"PAX / FORSAND Wardrobe\" to cart"
+  - button "Save \"PAX / FORSAND Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FORSAND":
+    - text: More options PAX / FORSAND
+    - 'radio "Option: PAX / FORSAND Wardrobe, white/white, 250x60x201 cm" [checked]'
+    - 'link "Option: PAX / FORSAND Wardrobe, white/white, 250x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-white-white-s59478085/
+    - 'radio "Option: PAX / FORSAND Wardrobe, white/white, 250x60x236 cm"'
+    - 'link "Option: PAX / FORSAND Wardrobe, white/white, 250x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-white-white-s89478022/
+    - 'radio "Option: PAX / FORSAND Wardrobe, dark grey/dark grey, 250x60x201 cm"'
+    - 'link "Option: PAX / FORSAND Wardrobe, dark grey/dark grey, 250x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-dark-grey-dark-grey-s09431321/
+    - 'radio "Option: PAX / FORSAND Wardrobe, dark grey/dark grey, 250x60x236 cm"'
+    - 'link "Option: PAX / FORSAND Wardrobe, dark grey/dark grey, 250x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-dark-grey-dark-grey-s79431313/
+  - link "PAX / FORSAND Wardrobe, white/white, 150x60x201 cm PAX / FORSAND Wardrobe, white/white, 150x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-white-white-s99246593/
+    - img "PAX / FORSAND Wardrobe, white/white, 150x60x201 cm"
+    - img "PAX / FORSAND Wardrobe, white/white, 150x60x201 cm"
+  - link "PAX / FORSAND Wardrobe, white/white, 150x60x201 cm (59x23 5/8x79 1/4 \") Price Rs. 38900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-white-white-s99246593/
+    - heading "PAX / FORSAND Wardrobe, white/white, 150x60x201 cm (59x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 38900 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 5 out of 5 stars. Total reviews: (1)"':
+    - 'img "Review: 5 out of 5 stars. Total reviews:"'
+    - text: (1)
+  - button "Add \"PAX / FORSAND Wardrobe\" to cart"
+  - button "Save \"PAX / FORSAND Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FORSAND":
+    - text: More options PAX / FORSAND
+    - 'radio "Option: PAX / FORSAND Wardrobe, white/white, 150x60x201 cm" [checked]'
+    - 'link "Option: PAX / FORSAND Wardrobe, white/white, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-white-white-s99246593/
+    - 'radio "Option: PAX / FORSAND Wardrobe, white/white, 150x60x236 cm"'
+    - 'link "Option: PAX / FORSAND Wardrobe, white/white, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-white-white-s79246594/
+    - 'radio "Option: PAX / FORSAND Wardrobe, grey-beige/grey-beige, 150x60x201 cm"'
+    - 'link "Option: PAX / FORSAND Wardrobe, grey-beige/grey-beige, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-grey-beige-grey-beige-s79431153/
+    - 'radio "Option: PAX / FORSAND Wardrobe, grey-beige/grey-beige, 150x60x236 cm"'
+    - 'link "Option: PAX / FORSAND Wardrobe, grey-beige/grey-beige, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-grey-beige-grey-beige-s09431627/
+  - link "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x201 cm PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s19336154/
+    - img "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x201 cm"
+    - img "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x201 cm"
+  - link "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x201 cm (19 5/8x23 5/8x79 1/4 \") Price Rs. 13400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s19336154/
+    - heading "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x201 cm (19 5/8x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 13400 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 4.7 out of 5 stars. Total reviews: (20)"':
+    - 'img "Review: 4.7 out of 5 stars. Total reviews:"'
+    - text: (20)
+  - button "Add \"PAX / ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / ÅHEIM":
+    - text: More options PAX / ÅHEIM
+    - 'radio "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x201 cm" [checked]'
+    - 'link "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s19336154/
+    - 'radio "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x236 cm"'
+    - 'link "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 50x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s79336146/
+  - link "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s69429749/
+    - img "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm"
+    - img "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm"
+  - link "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm (59x23 5/8x79 1/4 \") Price Rs. 35300 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s69429749/
+    - heading "PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm (59x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 35300 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / ÅHEIM Wardrobe combination\" to cart"
+  - button "Save \"PAX / ÅHEIM Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / ÅHEIM":
+    - text: More options PAX / ÅHEIM
+    - 'radio "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm" [checked]'
+    - 'link "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s69429749/
+    - 'radio "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm"'
+    - 'link "Option: PAX / ÅHEIM Wardrobe combination, white/mirror glass, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-aheim-wardrobe-combination-white-mirror-glass-s29429751/
+  - link "PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x236 cm PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-dark-grey-dark-grey-s59431578/
+    - img "PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x236 cm"
+    - img "PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x236 cm"
+  - link "PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x236 cm (59x23 5/8x93 1/8 \") Price Rs. 43200 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-dark-grey-dark-grey-s59431578/
+    - heading "PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x236 cm (59x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 43200 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / FORSAND Wardrobe\" to cart"
+  - button "Save \"PAX / FORSAND Wardrobe\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FORSAND":
+    - text: More options PAX / FORSAND
+    - 'radio "Option: PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x236 cm" [checked]'
+    - 'link "Option: PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-dark-grey-dark-grey-s59431578/
+    - 'radio "Option: PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x201 cm"'
+    - 'link "Option: PAX / FORSAND Wardrobe, dark grey/dark grey, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-dark-grey-dark-grey-s19431151/
+  - link "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x201 cm PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-combination-dark-grey-dark-grey-s99431326/
+    - img "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x201 cm"
+    - img "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x201 cm"
+  - link "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x201 cm (78 3/4x23 5/8x79 1/4 \") Price Rs. 62050 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-combination-dark-grey-dark-grey-s99431326/
+    - heading "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x201 cm (78 3/4x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 62050 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / FORSAND Wardrobe combination\" to cart"
+  - button "Save \"PAX / FORSAND Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FORSAND":
+    - text: More options PAX / FORSAND
+    - 'radio "Option: PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x201 cm" [checked]'
+    - 'link "Option: PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-combination-dark-grey-dark-grey-s99431326/
+    - 'radio "Option: PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x236 cm"'
+    - 'link "Option: PAX / FORSAND Wardrobe combination, dark grey/dark grey, 200x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-combination-dark-grey-dark-grey-s59431328/
+  - link "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x236 cm PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-combination-dark-grey-dark-grey-s99431171/
+    - img "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x236 cm"
+    - img "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x236 cm"
+  - link "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x236 cm (39 3/8x23 5/8x93 1/8 \") Price Rs. 39150 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-combination-dark-grey-dark-grey-s99431171/
+    - heading "PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x236 cm (39 3/8x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 39150 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - 'button "Review: 5 out of 5 stars. Total reviews: (1)"':
+    - 'img "Review: 5 out of 5 stars. Total reviews:"'
+    - text: (1)
+  - button "Add \"PAX / FORSAND Wardrobe combination\" to cart"
+  - button "Save \"PAX / FORSAND Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / FORSAND":
+    - text: More options PAX / FORSAND
+    - 'radio "Option: PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x236 cm" [checked]'
+    - 'link "Option: PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-combination-dark-grey-dark-grey-s99431171/
+    - 'radio "Option: PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x201 cm"'
+    - 'link "Option: PAX / FORSAND Wardrobe combination, dark grey/dark grey, 100x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-forsand-wardrobe-combination-dark-grey-dark-grey-s39431169/
+  - link "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x236 cm PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-tonstad-wardrobe-combination-dark-grey-brown-stained-oak-veneer-s79549015/
+    - img "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x236 cm"
+    - img "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x236 cm"
+  - link "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x236 cm (59x23 5/8x93 1/8 \") Price Rs. 68600 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-tonstad-wardrobe-combination-dark-grey-brown-stained-oak-veneer-s79549015/
+    - heading "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x236 cm (59x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 68600 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / TONSTAD Wardrobe combination\" to cart"
+  - button "Save \"PAX / TONSTAD Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / TONSTAD":
+    - text: More options PAX / TONSTAD
+    - 'radio "Option: PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x236 cm" [checked]'
+    - 'link "Option: PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-tonstad-wardrobe-combination-dark-grey-brown-stained-oak-veneer-s79549015/
+    - 'radio "Option: PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x201 cm"'
+    - 'link "Option: PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 150x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-tonstad-wardrobe-combination-dark-grey-brown-stained-oak-veneer-s49549012/
+  - link "PAX / TYSSEDAL Wardrobe combination, white/white glass, 150x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-tyssedal-wardrobe-combination-white-white-glass-s89575377/
+    - img "PAX / TYSSEDAL Wardrobe combination, white/white glass, 150x60x236 cm"
+  - link "PAX / TYSSEDAL Wardrobe combination, white/white glass, 150x60x236 cm (59x23 5/8x93 1/8 \") Price Rs. 72800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-tyssedal-wardrobe-combination-white-white-glass-s89575377/
+    - heading "PAX / TYSSEDAL Wardrobe combination, white/white glass, 150x60x236 cm (59x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 72800 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / TYSSEDAL Wardrobe combination\" to cart"
+  - button "Save \"PAX / TYSSEDAL Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - link "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x236 cm PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-tonstad-wardrobe-combination-dark-grey-brown-stained-oak-veneer-s89548906/
+    - img "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x236 cm"
+    - img "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x236 cm"
+  - link "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x236 cm (39 3/8x23 5/8x93 1/8 \") Price Rs. 53650 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-tonstad-wardrobe-combination-dark-grey-brown-stained-oak-veneer-s89548906/
+    - heading "PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x236 cm (39 3/8x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 53650 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / TONSTAD Wardrobe combination\" to cart"
+  - button "Save \"PAX / TONSTAD Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / TONSTAD":
+    - text: More options PAX / TONSTAD
+    - 'radio "Option: PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x236 cm" [checked]'
+    - 'link "Option: PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-tonstad-wardrobe-combination-dark-grey-brown-stained-oak-veneer-s89548906/
+    - 'radio "Option: PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x201 cm"'
+    - 'link "Option: PAX / TONSTAD Wardrobe combination, dark grey/brown stained oak veneer, 100x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-tonstad-wardrobe-combination-dark-grey-brown-stained-oak-veneer-s59548903/
+  - link "PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s89478098/
+    - img "PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm"
+    - img "PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm"
+  - link "PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm (39 3/8x23 5/8x79 1/4 \") Price Rs. 37500 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s89478098/
+    - heading "PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm (39 3/8x23 5/8x79 1/4 \")" [level=3]
+    - text: Price Rs. 37500 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / GRIMO Wardrobe combination\" to cart"
+  - button "Save \"PAX / GRIMO Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / GRIMO":
+    - text: More options PAX / GRIMO
+    - 'radio "Option: PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm" [checked]'
+    - 'link "Option: PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s89478098/
+    - 'radio "Option: PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm"'
+    - 'link "Option: PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s49478095/
+  - link "PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s39324701/
+    - img "PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm"
+    - img "PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm"
+  - link "PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm (39 3/8x23 5/8x93 1/8 \") Price Rs. 45050 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s39324701/
+    - heading "PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm (39 3/8x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 45050 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / GRIMO Wardrobe combination\" to cart"
+  - button "Save \"PAX / GRIMO Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / GRIMO":
+    - text: More options PAX / GRIMO
+    - 'radio "Option: PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm" [checked]'
+    - 'link "Option: PAX / GRIMO Wardrobe combination, white/white, 100x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s39324701/
+    - 'radio "Option: PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm"'
+    - 'link "Option: PAX / GRIMO Wardrobe combination, white/white, 100x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-grimo-wardrobe-combination-white-white-s09324712/
+  - link "PAX / GULLABERG Wardrobe combination, white/grey, 200x60x236 cm PAX / GULLABERG Wardrobe combination, white/grey, 200x60x236 cm":
+    - /url: https://www.ikea.com/in/en/p/pax-gullaberg-wardrobe-combination-white-grey-s89563732/
+    - img "PAX / GULLABERG Wardrobe combination, white/grey, 200x60x236 cm"
+    - img "PAX / GULLABERG Wardrobe combination, white/grey, 200x60x236 cm"
+  - link "PAX / GULLABERG Wardrobe combination, white/grey, 200x60x236 cm (78 3/4x23 5/8x93 1/8 \") Price Rs. 76200 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer":
+    - /url: https://www.ikea.com/in/en/p/pax-gullaberg-wardrobe-combination-white-grey-s89563732/
+    - heading "PAX / GULLABERG Wardrobe combination, white/grey, 200x60x236 cm (78 3/4x23 5/8x93 1/8 \")" [level=3]
+    - text: Price Rs. 76200 Flat 15% off* above Rs.20,000. Applied at checkout Price valid from 17-04-2025 until 01-06-2025 Exclusive IKEA family offer
+  - button "Add \"PAX / GULLABERG Wardrobe combination\" to cart"
+  - button "Save \"PAX / GULLABERG Wardrobe combination\" to shopping list"
+  - text: Available for delivery
+  - group "More options PAX / GULLABERG":
+    - text: More options PAX / GULLABERG
+    - 'radio "Option: PAX / GULLABERG Wardrobe combination, white/grey, 200x60x236 cm" [checked]'
+    - 'link "Option: PAX / GULLABERG Wardrobe combination, white/grey, 200x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-gullaberg-wardrobe-combination-white-grey-s89563732/
+    - 'radio "Option: PAX / GULLABERG Wardrobe combination, white/grey, 200x60x201 cm"'
+    - 'link "Option: PAX / GULLABERG Wardrobe combination, white/grey, 200x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-gullaberg-wardrobe-combination-white-grey-s49563729/
+    - 'radio "Option: PAX / GULLABERG Wardrobe combination, white/white, 200x60x236 cm"'
+    - 'link "Option: PAX / GULLABERG Wardrobe combination, white/white, 200x60x236 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-gullaberg-wardrobe-combination-white-white-s19563721/
+    - 'radio "Option: PAX / GULLABERG Wardrobe combination, white/white, 200x60x201 cm"'
+    - 'link "Option: PAX / GULLABERG Wardrobe combination, white/white, 200x60x201 cm"':
+      - /url: https://www.ikea.com/in/en/p/pax-gullaberg-wardrobe-combination-white-white-s79563718/
+  - heading "Go to category" [level=2]
+  - link "Skip listing":
+    - /url: "#plp--carousel__category-carousel-skip-btn"
+  - link "Category Wardrobe scents":
+    - /url: https://www.ikea.com/in/en/cat/wardrobe-scents-58411/
+    - paragraph: Category
+    - paragraph: Wardrobe scents
+  - link "Category Wardrobes":
+    - /url: https://www.ikea.com/in/en/cat/wardrobes-19053/
+    - paragraph: Category
+    - paragraph: Wardrobes
+  - link "Category PAX system":
+    - /url: https://www.ikea.com/in/en/cat/pax-system-19086/
+    - paragraph: Category
+    - paragraph: PAX system
+  - heading "Others also searched for" [level=2]
+  - list:
+    - listitem:
+      - link "wardrobe for clothes":
+        - /url: "?q=wardrobe for clothes"
+      - text: (203)
+    - listitem:
+      - link "bed":
+        - /url: "?q=bed"
+      - text: (99)
+    - listitem:
+      - link "wardrobe with mirror":
+        - /url: "?q=wardrobe with mirror"
+      - text: (46)
+    - listitem:
+      - link "wardrobe 3 door":
+        - /url: "?q=wardrobe 3 door"
+      - text: (136)
+    - listitem:
+      - link "storage cabinet":
+        - /url: "?q=storage cabinet"
+      - text: (195)
+    - listitem:
+      - link "wardrobe small":
+        - /url: "?q=wardrobe small"
+      - text: (7)
+    - listitem:
+      - link "cabinet":
+        - /url: "?q=cabinet"
+      - text: (329)
+    - listitem:
+      - link "wardrobe 2 door":
+        - /url: "?q=wardrobe 2 door"
+      - text: (64)
+    - listitem:
+      - link "pax":
+        - /url: "?q=pax"
+      - text: (244)
+    - listitem:
+      - link "chest of drawers":
+        - /url: "?q=chest of drawers"
+      - text: (43)
+- contentinfo
+- region "Cookie consent banner":
+  - dialog "You are in control of your own cookies":
+    - heading "You are in control of your own cookies" [level=2]
+    - paragraph: "IKEA India and our digital partners use cookies on this site. Some are strictly necessary to run the site but below are the optional ones:"
+    - list:
+      - listitem: Used for measuring how the site is used
+      - listitem: Enabling personalisation of the site
+      - listitem: For advertising marketing and social media
+    - link ", opens in a new tab":
+      - /url: https://www.ikea.com/in/en/customer-service/cookie-policy-pubffc638db
+      - text: Read more about these cookies
+    - button "Ok"
+    - button "Cookies Settings"
+```
+
+# Test source
+
+```ts
+   1 | import productLocators from '../locators/productpageLocators.js';
+   2 | import cartLocators from '../locators/cartLocators.js';
+   3 | import { expect } from '@playwright/test';
+   4 |
+   5 | class ProductPage {
+   6 |     constructor(page) {
+   7 |         this.page = page;
+   8 |     }
+   9 |
+  10 |     /**  **Utility Functions** **/
+  11 |     async waitForTimeout(ms = 2000) {
+  12 |         await this.page.waitForTimeout(ms);
+  13 |     }
+  14 |
+  15 |     /**  **Product Extraction** **/
+  16 |     async getProductDetails() {
+  17 |
+  18 |         const productNames = await this.page.$$eval(productLocators.productTitle, elements => elements.map(el => el.innerText));
+  19 |         const productPrices = await this.page.$$eval(productLocators.productPrice, elements => elements.map(el => el.innerText));
+  20 |
+  21 |         expect(productNames.length).toBeGreaterThan(0); // Ensure products exist
+  22 |
+  23 |         return productNames.map((name, i) => ({
+  24 |             name,
+  25 |             price: productPrices[i]
+  26 |         }));
+  27 |     }
+  28 |
+  29 |     /**  **Cart Operations** **/
+  30 |     async addToCart(productIndex) {
+  31 |         const products = await this.page.locator(productLocators.productCards);
+  32 |         await products.click()
+  33 |         // expect(products.length).toBeGreaterThanOrEqual(productIndex); // Ensure product index is valid
+  34 |
+  35 |         // await products[productIndex - 1].click();
+  36 |         // expect(await this.page.locator(productLocators.addToCartButton).isVisible()).toBeTruthy(); // Ensure button is visible
+  37 |
+  38 |         await this.page.locator(productLocators.addToCartButton).click();
+  39 |         console.log(`Added product ${productIndex} to cart`);
+  40 |
+  41 |         await this.waitForTimeout(2000);
+  42 |
+  43 |         // const cartCount = await this.page.locator(cartLocators.totalValue).innerText();
+  44 |         // expect(Number(cartCount)).toBeGreaterThan(0); // Ensure cart count increases
+  45 |     }
+  46 |
+  47 |     /**  **Sorting Operations** **/
+  48 |     async sortByMostPopular() {
+  49 |
+  50 |         await this.page.locator(productLocators.sortButton).click();
+  51 |         await this.page.locator(productLocators.mostPopularText).click();
+  52 |         const visibility = this.page.locator('button[aria-label="Close"]').isVisible()
+  53 |         // if(visibility){
+  54 |         //     await this.page.locator('button[aria-label="Close"]').click()
+  55 |         // }
+  56 |         await this.page.locator(productLocators.sortButton).click();
+  57 |         // if(visibility){
+  58 |         //     await this.page.locator('button[aria-label="Close"]').click()
+  59 |         // }
+  60 |
+  61 |         await this.waitForTimeout(2000);
+  62 |
+  63 |         const sortedProducts = await this.page.$$eval(productLocators.productTitle, elements => elements.map(el => el.innerText));
+  64 |         expect(sortedProducts.length).toBeGreaterThan(0); // Ensure sorted products are displayed
+  65 |     }
+  66 |
+  67 |     /**  **Filtering Operations** **/
+  68 |     async extractWardrobes() {
+  69 |         // expect(await this.page.locator(productLocators.categoryDropdown).isVisible()).toBeTruthy();
+  70 |         // expect(await this.page.locator(productLocators.storageFilter).isVisible()).toBeTruthy();
+  71 |         // expect(await this.page.locator(productLocators.materialFilter).isVisible()).toBeTruthy();
+  72 |         // expect(await this.page.locator(productLocators.metalFilter).isVisible()).toBeTruthy();
+  73 |
+  74 |         await this.page.locator(productLocators.categoryDropdown).click();
+  75 |         await this.page.waitForTimeout(2000)
+> 76 |         await this.page.locator(productLocators.storageFilter).click();
+     |                                                                ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  77 |         await this.waitForTimeout(2000);
+  78 |
+  79 |         await this.page.locator(productLocators.materialFilter).click();
+  80 |         await this.page.locator(productLocators.metalFilter).click();
+  81 |         await this.waitForTimeout(2000);
+  82 |
+  83 |         const productNames = await this.page.$$eval(productLocators.productTitle, elements => elements.map(el => el.innerText));
+  84 |
+  85 |         expect(productNames.length).toBeGreaterThan(0); 
+  86 |
+  87 |         let wardrobeData = [];
+  88 |         for (let i = 0; i < productNames.length && i < 20; i++) {
+  89 |             wardrobeData.push({
+  90 |                 name: productNames[i]
+  91 |             });
+  92 |         }
+  93 |
+  94 |         return wardrobeData;
+  95 |     }
+  96 | }
+  97 |
+  98 | export default ProductPage;
+  99 |
+```

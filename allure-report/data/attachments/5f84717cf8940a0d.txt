@@ -1,0 +1,42 @@
+Navigated to IKEA homepage
+Pincode set to Hyderabad (500001)
+[
+  { name: 'GAMMALBYN', price: '22,990' },
+  { name: 'GLOSTAD', price: '9,990' },
+  { name: 'JOLPEN', price: '5,990' },
+  { name: 'HAMMARN', price: '9,990' },
+  { name: 'GAMMALBYN', price: '39,990' },
+  { name: 'BÅRSLÖV', price: '59,990' },
+  { name: 'EKTORP', price: '29,990' },
+  { name: 'ORMARYD', price: '20,990' },
+  { name: 'NÄMMARÖ', price: '5,500' },
+  { name: 'FRIHETEN', price: '54,990' },
+  { name: 'GAMMALBYN', price: '19,990' },
+  { name: 'FRIDHULT', price: '19,990' },
+  { name: 'KIVIK', price: '35,990' },
+  { name: 'FRIHETEN / KLAGSHAMN', price: '41,990' },
+  { name: 'EKTORP', price: '62,480' },
+  { name: 'EKTORP', price: '22,990' },
+  { name: 'EKTORP', price: '37,990' },
+  { name: 'LINANÄS', price: '9,000' },
+  { name: 'EKTORP', price: '24,990' },
+  { name: 'ÄPPLARYD', price: '4,000' },
+  { name: 'FRIHETEN', price: '78,990' },
+  { name: 'BÅRSLÖV', price: '49,990' },
+  { name: 'KIVIK', price: '54,990' },
+  { name: 'KIVIK', price: '35,990' },
+  { name: 'KIVIK', price: '41,990' },
+  { name: 'KIVIK', price: '39,990' },
+  { name: 'KIVIK', price: '45,990' },
+  { name: 'KIVIK', price: '65,990' },
+  { name: 'KIVIK', price: '69,990' },
+  { name: 'KIVIK', price: '43,990' },
+  { name: 'KIVIK', price: '49,990' },
+  { name: 'KIVIK', price: '36,990' },
+  { name: 'KIVIK', price: '40,990' },
+  { name: 'KIVIK', price: '57,990' },
+  { name: 'KIVIK', price: '61,990' },
+  { name: 'KIVIK', price: '40,990' }
+]
+Data successfully written to sofas_data.json
+Test execution completed

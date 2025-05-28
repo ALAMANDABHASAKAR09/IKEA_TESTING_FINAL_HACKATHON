@@ -1,0 +1,13 @@
+{
+    "pincode": "500001",
+    "products": {
+        "sofas": "Sofas & Seating",
+        "wardrobes": "Wardrobe",
+        "storage": "Wardrobes & Storage"
+    },
+    "cartIndexes": {
+        "storageProductIndex": 3,
+        "sofasProductIndex": 1
+    },
+    "discountCoupon":"SNAXMKAS129A"
+}

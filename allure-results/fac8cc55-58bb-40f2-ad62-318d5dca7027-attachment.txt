@@ -1,0 +1,25 @@
+Navigated to IKEA homepage
+[
+  { name: 'PAX / HASVIK' },
+  { name: 'PAX / MEHAMN/AULI' },
+  { name: 'PAX / HASVIK' },
+  { name: 'SKYTTA / PAX' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / AULI' },
+  { name: 'PAX / HASVIK' },
+  { name: 'PAX / MEHAMN' },
+  { name: 'PAX / SVARTISDAL' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / MEHAMN' },
+  { name: 'SKYTTA / PAX' },
+  { name: 'PAX / AULI' },
+  { name: 'PAX / HASVIK' },
+  { name: 'PAX / HOKKSUND' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / MEHAMN' },
+  { name: 'PAX / HASVIK' }
+]
+Data successfully written to wardrobe_data.json
+Test execution completed

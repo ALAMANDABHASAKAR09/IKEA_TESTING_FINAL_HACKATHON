@@ -1,0 +1,19 @@
+Navigated to IKEA homepage
+Added product 3 to cart
+Added product 1 to cart
+Cart Total Value: 16,980
+Total Value: 16,980
+Data successfully written to cart_summary.json
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 136215,
+  [Symbol(trigger_async_id_symbol)]: 134929,
+  [Symbol(kResourceStore)]: Zone {
+    _asyncLocalStorage: AsyncLocalStorage {
+      kResourceStore: Symbol(kResourceStore),
+      enabled: true
+    },
+    _data: Map(1) { 'stepZone' => [Object] }
+  }
+}
+Test execution completed

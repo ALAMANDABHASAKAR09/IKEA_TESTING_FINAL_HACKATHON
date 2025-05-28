@@ -1,0 +1,3 @@
+Cookies popup accepted
+Navigated to IKEA homepage
+Test execution completed

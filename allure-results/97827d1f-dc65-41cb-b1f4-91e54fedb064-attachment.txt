@@ -1,0 +1,4 @@
+Cookies popup accepted
+Navigated to IKEA homepage
+Added product 3 to cart
+Test execution completed

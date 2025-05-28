@@ -1,0 +1,8 @@
+Cookies popup accepted
+Navigated to IKEA homepage
+Added product 3 to cart
+Added product 1 to cart
+Cart Total Value: 16,980
+Total Value: 16,980
+Data successfully written to cart_summary.json
+Test execution completed

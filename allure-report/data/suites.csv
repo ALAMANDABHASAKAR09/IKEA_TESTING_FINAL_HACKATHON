@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","27048","Add Products to Cart & Validate Total","chromium","Mon May 26 17:25:11 IST 2025","passed","Mon May 26 17:25:38 IST 2025","IKEA Automation Tests","main.spec.js","",""
+"","23221","Search and Extract Available Sofas & Seating","chromium","Mon May 26 17:24:29 IST 2025","passed","Mon May 26 17:24:52 IST 2025","IKEA Automation Tests","main.spec.js","",""
+"","17503","Extract Wardrobe","chromium","Mon May 26 17:24:53 IST 2025","passed","Mon May 26 17:25:11 IST 2025","IKEA Automation Tests","main.spec.js","",""
