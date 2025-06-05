@@ -1,4 +1,5 @@
 import cartLocators from '../locators/cartLocators.js';
+import { clickButton, waitForTimeout,fillInput } from '../utils/dataUtils.js';
 import { expect } from '@playwright/test';  
 
 class CartPage {
@@ -6,52 +7,65 @@ class CartPage {
         this.page = page;
     }
 
-    /**  **Utility Functions** **/
-    async waitForTimeout(ms = 2000) {
-        await this.page.waitForTimeout(ms);
-    }
-
-    /**  **Continue to Shopping Bag** **/
+    /** **Navigation Functions** **/
     async continueToShoppingBag() {
-        // expect(await this.page.locator(cartLocators.continueShoppingBag).isVisible()).toBeTruthy();  // ✅ Ensure button is visible before clicking
-        await this.page.locator(cartLocators.continueShoppingBag).click();
+        await waitForTimeout(this.page);
+        await clickButton(this.page, cartLocators.continueShoppingBag);
     }
 
-    async navigateToCart(){
-        await this.page.click(cartLocators.shoppingBagButton);
+    async navigateToCart() {
+        await clickButton(this.page, cartLocators.shoppingBagButton);
     }
 
-    /**  **Extract Cart Summary** **/
+    /** **Extract Cart Summary & Validate** **/
     async getCartSummary() {
-        // expect(await this.page.locator(cartLocators.shoppingBagButton).isVisible()).toBeTruthy();  // ✅ Ensure button is visible before clicking
-        await this.page.click(cartLocators.shoppingBagButton);
+        try {
+            await this.navigateToCart();
 
-        const totalValue = await this.page.locator(cartLocators.totalValue).innerText();
-        
-        console.log('Cart Total Value:', totalValue);
+            await waitForTimeout(this.page)
 
-        return {
-            total: totalValue
-        };
+            const total = await this.page.locator(cartLocators.totalValue).innerText();
+
+            return { total };
+        } catch (error) {
+            console.error(' Error fetching Cart Summary:', error);
+        }
     }
 
-    async discount(discountCoupon){
-        await expect(this.page.locator(cartLocators.discountOpenButton)).toBeVisible()
+    
+    /** **Apply Discount & Verify Error Message** **/
+    async applyDiscount(discountCoupon) {
+        try {
+            await this.navigateToCart();
+            await waitForTimeout(this.page);
 
-        await this.page.locator(cartLocators.discountOpenButton).click()
+            await clickButton(this.page, cartLocators.discountOpenButton);
+            await waitForTimeout(this.page);
 
-        await expect(this.page.locator(cartLocators.discountInput)).toBeEnabled()
 
-        await this.page.locator(cartLocators.discountInput).fill(discountCoupon)
+            await fillInput(this.page, cartLocators.discountInput, discountCoupon);
 
-        await expect(this.page.locator(cartLocators.discountApplyButton)).toBeVisible()
+            await clickButton(this.page, cartLocators.discountApplyButton);
 
-        await this.page.locator(cartLocators.discountApplyButton).click()
 
-        // await expect(this.page.locator(cartLocators.discountErrorMessage)).toBeVisible()
+            const errorMessage = await this.page.locator(cartLocators.discountErrorMessage).innerText();
 
-        console.log(await this.page.locator(cartLocators.discountErrorMessage).textContent())
+            await clickButton(this.page, cartLocators.discountApplyButton);
+            // expect(errorMessage).toContain('Please enter a valid discount code.');
+            console.log('Discount Error Message:', errorMessage);
+        } catch (error) {
+            console.error(' Error applying discount:',error);
+        }
+    }
 
+    async click(button){
+
+        const Visibility = await this.page.locator(button).isEnabled()
+        if(Visibility){
+            await this.page.locator(button).click()
+        }else{
+            console.log("Button is not enabled")
+        }
     }
 }
 

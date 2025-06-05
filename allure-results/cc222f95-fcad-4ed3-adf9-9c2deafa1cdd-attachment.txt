@@ -1,0 +1,38 @@
+ Error fetching Cart Summary: page.waitForTimeout: Test timeout of 30000ms exceeded.
+    at waitForTimeout (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:19:16)
+    at CartPage.getCartSummary (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:25:33)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:101:33
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:100:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@59',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 19,
+      column: 16,
+      function: 'waitForTimeout'
+    },
+    category: 'pw:api',
+    title: 'page.waitForTimeout',
+    apiName: 'page.waitForTimeout',
+    params: { timeout: 2000 },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@59'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748869122053,
+    error: {
+      message: 'Error: page.waitForTimeout: Test timeout of 30000ms exceeded.',
+      stack: 'Error: page.waitForTimeout: Test timeout of 30000ms exceeded.\n' +
+        '    at waitForTimeout (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:19:16)\n' +
+        '    at CartPage.getCartSummary (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:25:33)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:101:33\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:100:9',
+      cause: undefined
+    }
+  }
+}

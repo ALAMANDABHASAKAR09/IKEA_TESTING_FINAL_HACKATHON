@@ -1,0 +1,118 @@
+ Failed to click button: a[aria-label="Enter postal code"] ExpectError: expect(locator).toBeVisible()
+
+Locator: locator('a[aria-label="Enter postal code"]')
+Expected: visible
+Received: undefined
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for locator('a[aria-label="Enter postal code"]')
+
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:25:45)
+    at Homepage.setPincode (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\homepage.js:13:30)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:35:28
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:34:20 {
+  matcherResult: {
+    message: '\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+      '\n' +
+      `Locator: locator('a[aria-label="Enter postal code"]')\n` +
+      'Expected: visible\n' +
+      'Received: undefined\n' +
+      'Call log:\n' +
+      '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+      `\x1B[2m  - waiting for locator('a[aria-label="Enter postal code"]')\x1B[22m\n`,
+    pass: false,
+    actual: undefined,
+    name: 'toBeVisible',
+    expected: 'visible',
+    log: [
+      '  - expect.toBeVisible with timeout 5000ms',
+      `  - waiting for locator('a[aria-label="Enter postal code"]')`
+    ],
+    timeout: undefined
+  },
+  [Symbol(step)]: {
+    stepId: 'expect@17',
+    category: 'expect',
+    title: 'expect.toBeVisible',
+    params: { expected: [Object] },
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 25,
+      column: 45,
+      function: 'clickButton'
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'expect@17'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748520300730,
+    error: {
+      message: 'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('a[aria-label="Enter postal code"]')\n` +
+        'Expected: visible\n' +
+        'Received: undefined\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('a[aria-label="Enter postal code"]')\x1B[22m\n`,
+      stack: 'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('a[aria-label="Enter postal code"]')\n` +
+        'Expected: visible\n' +
+        'Received: undefined\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('a[aria-label="Enter postal code"]')\x1B[22m\n` +
+        '\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:25:45)\n' +
+        '    at Homepage.setPincode (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\homepage.js:13:30)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:35:28\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:34:20',
+      cause: undefined
+    }
+  }
+}
+ Error setting pincode: page.waitForTimeout: Target page, context or browser has been closed
+    at waitForTimeout (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:19:16)
+    at Homepage.setPincode (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\homepage.js:14:33)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:35:13
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:34:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@23',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 19,
+      column: 16,
+      function: 'waitForTimeout'
+    },
+    category: 'pw:api',
+    title: 'page.waitForTimeout',
+    apiName: 'page.waitForTimeout',
+    params: { timeout: 2000 },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@23'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748520300746,
+    error: {
+      message: 'Error: page.waitForTimeout: Target page, context or browser has been closed',
+      stack: 'Error: page.waitForTimeout: Target page, context or browser has been closed\n' +
+        '    at waitForTimeout (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:19:16)\n' +
+        '    at Homepage.setPincode (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\homepage.js:14:33)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:35:13\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:34:9',
+      cause: undefined
+    }
+  }
+}

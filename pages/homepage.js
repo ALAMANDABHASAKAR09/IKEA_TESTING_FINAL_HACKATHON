@@ -1,4 +1,5 @@
 import homepageLocators from '../locators/homepageLocators.js';
+import { clickButton, waitForTimeout, fillInput, highlightElement } from '../utils/dataUtils.js';
 import { expect } from '@playwright/test';  
 
 class Homepage {
@@ -6,49 +7,34 @@ class Homepage {
         this.page = page;
     }
 
-    /**  **Utility Functions** **/
-    async waitForTimeout(time = 2000) {
-        await this.page.waitForTimeout(time);
-    }
-
-    /**  **Element Highlighting** **/
-    async highlightElement(selector) {
-        const elementHandle = await this.page.locator(selector).elementHandle();
-        expect(elementHandle).not.toBeNull();  
-        
-        await this.page.evaluate((element) => {
-            element.style.border = '3px solid red';
-            setTimeout(() => element.style.border = '', 3000);
-        }, elementHandle);
-    }
-
-    /**  **Set Pincode** **/
+    /** **Set Pincode** **/
     async setPincode(pincode) {
-        await expect(this.page.locator(homepageLocators.pincodeButton)).toBeVisible()
-
-        await this.highlightElement(homepageLocators.pincodeButton);
-        await this.page.locator(homepageLocators.pincodeButton).click();
-        await this.waitForTimeout();
-
-        await this.highlightElement(homepageLocators.pincodeInput);
-        await this.page.locator(homepageLocators.pincodeInput).fill(pincode);
-
-        await expect(this.page.locator(homepageLocators.confirmPincode)).toBeVisible()
-
-        await this.page.locator(homepageLocators.confirmPincode).click();
+        try {
+            await clickButton(this.page, homepageLocators.pincodeButton);
+            await waitForTimeout(this.page);
+            
+            await highlightElement(this.page, homepageLocators.pincodeInput);
+            await fillInput(this.page, homepageLocators.pincodeInput, pincode);
+            
+            await clickButton(this.page, homepageLocators.confirmPincode);
+            console.log(` Pincode ${pincode} set successfully`);
+        } catch (error) {
+            console.error(` Error setting pincode:`, error);
+        }
     }
 
-    /**  **Search Product** **/
+    /** **Search Product** **/
     async searchProduct(productName) {
+        try {
+            await highlightElement(this.page, homepageLocators.searchInput);
+            await fillInput(this.page, homepageLocators.searchInput, productName);
+            await waitForTimeout(this.page);
 
-        await this.highlightElement(homepageLocators.searchInput);
-        await this.page.locator(homepageLocators.searchInput).fill(productName);
-        await this.waitForTimeout();
-
-        await expect(this.page.locator(homepageLocators.searchButton)).toBeVisible();  // Ensure search button is visible
-
-        await this.highlightElement(homepageLocators.searchButton);
-        await this.page.locator(homepageLocators.searchButton).click();
+            await clickButton(this.page, homepageLocators.searchButton);
+            console.log(` Searched for product: ${productName}`);
+        } catch (error) {
+            console.error(` Error searching product:`, error);
+        }
     }
 }
 

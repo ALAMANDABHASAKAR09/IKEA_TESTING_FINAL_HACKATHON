@@ -1,0 +1,2 @@
+Cookies popup accepted
+Test execution completed

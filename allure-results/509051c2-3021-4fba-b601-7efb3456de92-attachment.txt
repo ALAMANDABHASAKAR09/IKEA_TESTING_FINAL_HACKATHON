@@ -1,0 +1,66 @@
+Navigated to IKEA homepage
+ Clicked on button: a[aria-label="Enter postal code"]
+ Highlighted element: input[aria-describedby="hnf-postalcode-helper"]
+ Filled input: input[aria-describedby="hnf-postalcode-helper"]
+ Clicked on button: //button[@type="button"]//span[text()="Save"]
+ Pincode 500001 set successfully
+ Highlighted element: //input[@id="ikea-search-input"]
+ Filled input: //input[@id="ikea-search-input"]
+ Clicked on button: //div[@class="search-box-wrapper"]//button[@type="submit"]
+ Searched for product: Wardrobe
+ Clicked on button: //div[@class="plp-filter-bar__options"]//button[7]
+ Clicked on button: //span[text()="Wardrobe with sliding doors"]
+ Clicked on button: (//span[@class="plp-checkbox--subtle plp-checkbox"])[2]/span
+ Extracted wardrobe details
+[
+  { name: 'KLEPPSTAD' },
+  { name: 'RAKKESTAD' },
+  { name: 'PAX / HASVIK' },
+  { name: 'HAUGA' },
+  { name: 'PAX / MEHAMN/AULI' },
+  { name: 'PAX / HASVIK' },
+  { name: 'PAX / AULI' },
+  { name: 'PAX / SVARTISDAL' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / MEHAMN' },
+  { name: 'PAX / AULI' },
+  { name: 'PAX / HASVIK' },
+  { name: 'PAX / MEHAMN' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / MEHAMN' },
+  { name: 'PAX / FÄRVIK' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / MEHAMN' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / MEHAMN/AULI' },
+  { name: 'PAX / AULI' },
+  { name: 'PAX / MEHAMN/AULI' },
+  { name: 'PAX / FARDAL/ÅHEIM' },
+  { name: 'PAX / FARDAL/ÅHEIM' },
+  { name: 'PAX / FARDAL/ÅHEIM' },
+  { name: 'PAX / FARDAL/ÅHEIM' },
+  { name: 'PAX / REINSVOLL/ÅHEIM' },
+  { name: 'PAX / ÅHEIM' },
+  { name: 'PAX / FARDAL' },
+  { name: 'PAX / VIKANES' },
+  { name: 'PAX / FORSAND/ÅHEIM' },
+  { name: 'PAX / FORSAND' },
+  { name: 'PAX / FORSAND' },
+  { name: 'PAX / ÅHEIM' },
+  { name: 'PAX / FORSAND/ÅHEIM' },
+  { name: 'PAX / ÅHEIM' },
+  { name: 'PAX / TYSSEDAL' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / GULLABERG' },
+  { name: 'PAX / VIKANES' },
+  { name: 'PAX / TONSTAD' },
+  { name: 'PAX / TONSTAD' },
+  { name: 'PAX / TONSTAD' },
+  { name: 'PAX / MISTUDDEN' }
+]
+Data successfully written to wardrobe_data.json
+Test execution completed

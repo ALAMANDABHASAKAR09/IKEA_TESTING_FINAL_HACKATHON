@@ -1,4 +1,5 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","27048","Add Products to Cart & Validate Total","chromium","Mon May 26 17:25:11 IST 2025","passed","Mon May 26 17:25:38 IST 2025","IKEA Automation Tests","main.spec.js","",""
-"","23221","Search and Extract Available Sofas & Seating","chromium","Mon May 26 17:24:29 IST 2025","passed","Mon May 26 17:24:52 IST 2025","IKEA Automation Tests","main.spec.js","",""
-"","17503","Extract Wardrobe","chromium","Mon May 26 17:24:53 IST 2025","passed","Mon May 26 17:25:11 IST 2025","IKEA Automation Tests","main.spec.js","",""
+"","39941","Search and Extract Available Sofas & Seating","chromium","Tue Jun 03 10:14:53 IST 2025","passed","Tue Jun 03 10:15:33 IST 2025","IKEA Automation Tests","main.spec.js","",""
+"","64104","Add Products to Cart & Validate Total","chromium","Tue Jun 03 10:16:27 IST 2025","passed","Tue Jun 03 10:17:31 IST 2025","IKEA Automation Tests","main.spec.js","",""
+"","52474","Extract Wardrobe of Metal Type","chromium","Tue Jun 03 10:15:34 IST 2025","passed","Tue Jun 03 10:16:27 IST 2025","IKEA Automation Tests","main.spec.js","",""
+"","63054","Verifiying error message for invalid discount coupoun","chromium","Tue Jun 03 10:17:31 IST 2025","passed","Tue Jun 03 10:18:34 IST 2025","IKEA Automation Tests","main.spec.js","",""

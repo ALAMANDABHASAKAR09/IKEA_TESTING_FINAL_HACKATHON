@@ -4,7 +4,7 @@ import Homepage from '../pages/homepage.js';
 import ProductPage from '../pages/productPage.js';
 import CartPage from '../pages/cartpage.js';
 
-import { writeJsonFile } from '../utils/dataUtils.js';
+import { writeJsonFile, waitForTimeout } from '../utils/dataUtils.js';
 import inputData from '../data/input/input.json'; 
 
 let homepage, productPage, cartPage;
@@ -19,6 +19,8 @@ test.describe('IKEA Automation Tests', () => {
         await test.step('Navigate to IKEA homepage', async () => {
             await page.goto('https://www.ikea.com');
             await page.waitForLoadState();
+            
+            await page.waitForTimeout(3000)
 
             const cookiesPopup = page.locator('button[id="onetrust-accept-btn-handler"]');
             if (await cookiesPopup.isVisible()) {
@@ -27,6 +29,15 @@ test.describe('IKEA Automation Tests', () => {
             }
 
             await page.click('(//span[text()="Go shopping"])[3]');
+
+            await page.waitForTimeout(4000);
+
+            const cookiesPopupOk = page.locator('button[id="onetrust-accept-btn-handler"]');
+            if (await cookiesPopupOk.isVisible()) {
+                await cookiesPopupOk.click();
+                console.log('Cookies popup accepted');
+            }
+
             console.log('Navigated to IKEA homepage');
         });
 
@@ -85,7 +96,7 @@ test.describe('IKEA Automation Tests', () => {
         await test.step('Continue Shopping Bag after Second Addition', async () => {
             await cartPage.continueToShoppingBag();
         });
-        
+
         await test.step('Open Cart and Extract Summary', async () => {
             const cartDetails = await cartPage.getCartSummary();
             console.log('Total Value:', cartDetails.total);
@@ -107,7 +118,7 @@ test.describe('IKEA Automation Tests', () => {
 
         await test.step('Checking error message for invalid discount coupon',async()=>{
             await cartPage.navigateToCart()
-            await cartPage.discount(inputData.discountCoupon);
+            await cartPage.applyDiscount(inputData.discountCoupon);
         });
     })
 });

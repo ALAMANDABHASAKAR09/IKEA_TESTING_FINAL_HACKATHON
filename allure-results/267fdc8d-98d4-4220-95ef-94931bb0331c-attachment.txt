@@ -1,0 +1,256 @@
+ Failed to click button: //div[@class="pip-buy-module__buttons"] ExpectError: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('//div[@class="pip-buy-module__buttons"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for locator('//div[@class="pip-buy-module__buttons"]')
+
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:25:45)
+    at ProductPage.addToCart (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\productPage.js:33:30)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:112:13
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:110:9 {
+  matcherResult: {
+    message: '\x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+      '\n' +
+      `Locator: locator('//div[@class="pip-buy-module__buttons"]')\n` +
+      'Expected: visible\n' +
+      'Received: <element(s) not found>\n' +
+      'Call log:\n' +
+      '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+      `\x1B[2m  - waiting for locator('//div[@class="pip-buy-module__buttons"]')\x1B[22m\n`,
+    pass: false,
+    actual: '<element(s) not found>',
+    name: 'toBeVisible',
+    expected: 'visible',
+    log: [
+      '  - expect.toBeVisible with timeout 5000ms',
+      `  - waiting for locator('//div[@class="pip-buy-module__buttons"]')`
+    ],
+    timeout: 5000
+  },
+  [Symbol(step)]: {
+    stepId: 'expect@38',
+    category: 'expect',
+    title: 'expect.toBeVisible',
+    params: { expected: [Object] },
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 25,
+      column: 45,
+      function: 'clickButton'
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'expect@38'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748868234095,
+    error: {
+      message: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('//div[@class="pip-buy-module__buttons"]')\n` +
+        'Expected: visible\n' +
+        'Received: <element(s) not found>\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('//div[@class="pip-buy-module__buttons"]')\x1B[22m\n`,
+      stack: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('//div[@class="pip-buy-module__buttons"]')\n` +
+        'Expected: visible\n' +
+        'Received: <element(s) not found>\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('//div[@class="pip-buy-module__buttons"]')\x1B[22m\n` +
+        '\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:25:45)\n' +
+        '    at ProductPage.addToCart (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\productPage.js:33:30)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:112:13\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:110:9',
+      cause: undefined
+    }
+  }
+}
+ Failed to click button: button[aria-label="Go to shopping bag"] ExpectError: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('button[aria-label="Go to shopping bag"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for locator('button[aria-label="Go to shopping bag"]')
+
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:25:45)
+    at CartPage.continueToShoppingBag (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:12:26)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:116:28
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:115:20 {
+  matcherResult: {
+    message: '\x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+      '\n' +
+      `Locator: locator('button[aria-label="Go to shopping bag"]')\n` +
+      'Expected: visible\n' +
+      'Received: <element(s) not found>\n' +
+      'Call log:\n' +
+      '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+      `\x1B[2m  - waiting for locator('button[aria-label="Go to shopping bag"]')\x1B[22m\n`,
+    pass: false,
+    actual: '<element(s) not found>',
+    name: 'toBeVisible',
+    expected: 'visible',
+    log: [
+      '  - expect.toBeVisible with timeout 5000ms',
+      `  - waiting for locator('button[aria-label="Go to shopping bag"]')`
+    ],
+    timeout: 5000
+  },
+  [Symbol(step)]: {
+    stepId: 'expect@41',
+    category: 'expect',
+    title: 'expect.toBeVisible',
+    params: { expected: [Object] },
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 25,
+      column: 45,
+      function: 'clickButton'
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'expect@41'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748868243028,
+    error: {
+      message: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('button[aria-label="Go to shopping bag"]')\n` +
+        'Expected: visible\n' +
+        'Received: <element(s) not found>\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('button[aria-label="Go to shopping bag"]')\x1B[22m\n`,
+      stack: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('button[aria-label="Go to shopping bag"]')\n` +
+        'Expected: visible\n' +
+        'Received: <element(s) not found>\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('button[aria-label="Go to shopping bag"]')\x1B[22m\n` +
+        '\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:25:45)\n' +
+        '    at CartPage.continueToShoppingBag (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:12:26)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:116:28\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:115:20',
+      cause: undefined
+    }
+  }
+}
+ Failed to click button: button[aria-controls="SEC_cart-coupon"] ExpectError: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('button[aria-controls="SEC_cart-coupon"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for locator('button[aria-controls="SEC_cart-coupon"]')
+
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:25:45)
+    at CartPage.applyDiscount (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:39:30)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:121:13
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:119:9 {
+  matcherResult: {
+    message: '\x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+      '\n' +
+      `Locator: locator('button[aria-controls="SEC_cart-coupon"]')\n` +
+      'Expected: visible\n' +
+      'Received: <element(s) not found>\n' +
+      'Call log:\n' +
+      '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+      `\x1B[2m  - waiting for locator('button[aria-controls="SEC_cart-coupon"]')\x1B[22m\n`,
+    pass: false,
+    actual: '<element(s) not found>',
+    name: 'toBeVisible',
+    expected: 'visible',
+    log: [
+      '  - expect.toBeVisible with timeout 5000ms',
+      `  - waiting for locator('button[aria-controls="SEC_cart-coupon"]')`
+    ],
+    timeout: 5000
+  },
+  [Symbol(step)]: {
+    stepId: 'expect@47',
+    category: 'expect',
+    title: 'expect.toBeVisible',
+    params: { expected: [Object] },
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 25,
+      column: 45,
+      function: 'clickButton'
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'expect@47'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748868311667,
+    error: {
+      message: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('button[aria-controls="SEC_cart-coupon"]')\n` +
+        'Expected: visible\n' +
+        'Received: <element(s) not found>\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('button[aria-controls="SEC_cart-coupon"]')\x1B[22m\n`,
+      stack: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('button[aria-controls="SEC_cart-coupon"]')\n` +
+        'Expected: visible\n' +
+        'Received: <element(s) not found>\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('button[aria-controls="SEC_cart-coupon"]')\x1B[22m\n` +
+        '\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:25:45)\n' +
+        '    at CartPage.applyDiscount (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:39:30)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:121:13\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:119:9',
+      cause: undefined
+    }
+  }
+}
+ Error applying discount: ReferenceError: fillInput is not defined
+    at CartPage.applyDiscount (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:40:13)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:121:13
+    at TestStepInfoImpl._runStepBody (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\testInfo.js:390:14)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\common\testType.js:244:20
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\common\testType.js:242:18
+    at TestTypeImpl._step (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\common\testType.js:239:12)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:119:9
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\workerMain.js:304:9
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\testInfo.js:277:11
+    at TimeoutManager.withRunnable (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\testInfo.js:275:7)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\workerMain.js:302:7
+    at WorkerMain._runTest (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\workerMain.js:277:5)
+    at WorkerMain.runTestGroup (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\workerMain.js:193:11)
+    at process.<anonymous> (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\common\process.js:70:22)

@@ -1,0 +1,118 @@
+ Error applying discount: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//div[@class="_wrapper_3mtui_1"]//button')
+    - locator resolved to <button type="submit" class="cart-ingka-btn cart-ingka-btn--loading cart-ingka-btn--small cart-ingka-btn--primary _button_3mtui_14">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="_wrapper_3mtui_1">…</div> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="_wrapper_3mtui_1">…</div> intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="_wrapper_3mtui_1">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:26:37)
+    at CartPage.applyDiscount (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:51:30)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:121:13
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:119:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@51',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 26,
+      column: 37,
+      function: 'clickButton'
+    },
+    category: 'pw:api',
+    title: 'locator.click(//div[@class="_wrapper_3mtui_1"]//button)',
+    apiName: 'locator.click',
+    params: {
+      selector: '//div[@class="_wrapper_3mtui_1"]//button',
+      strict: true
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@51'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748924062876,
+    error: {
+      message: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('//div[@class="_wrapper_3mtui_1"]//button')\x1B[22m\n` +
+        '\x1B[2m    - locator resolved to <button type="submit" class="cart-ingka-btn cart-ingka-btn--loading cart-ingka-btn--small cart-ingka-btn--primary _button_3mtui_14">…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="_wrapper_3mtui_1">…</div> intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="_wrapper_3mtui_1">…</div> intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m    - done scrolling\x1B[22m\n' +
+        '\x1B[2m    - <div class="_wrapper_3mtui_1">…</div> intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m  - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 500ms\x1B[22m\n',
+      stack: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('//div[@class="_wrapper_3mtui_1"]//button')\x1B[22m\n` +
+        '\x1B[2m    - locator resolved to <button type="submit" class="cart-ingka-btn cart-ingka-btn--loading cart-ingka-btn--small cart-ingka-btn--primary _button_3mtui_14">…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="_wrapper_3mtui_1">…</div> intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="_wrapper_3mtui_1">…</div> intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m    - done scrolling\x1B[22m\n' +
+        '\x1B[2m    - <div class="_wrapper_3mtui_1">…</div> intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m  - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 500ms\x1B[22m\n' +
+        '\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:26:37)\n' +
+        '    at CartPage.applyDiscount (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:51:30)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:121:13\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:119:9',
+      cause: undefined
+    }
+  }
+}

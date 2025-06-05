@@ -1,0 +1,23 @@
+Cookies popup accepted
+Cookies popup accepted
+Navigated to IKEA homepage
+ Clicked on button: a[aria-label="Enter postal code"]
+ Highlighted element: input[aria-describedby="hnf-postalcode-helper"]
+ Filled input: input[aria-describedby="hnf-postalcode-helper"]
+ Clicked on button: //button[@type="button"]//span[text()="Save"]
+ Pincode 500001 set successfully
+ Highlighted element: //input[@id="ikea-search-input"]
+ Filled input: //input[@id="ikea-search-input"]
+ Clicked on button: //div[@class="search-box-wrapper"]//button[@type="submit"]
+ Searched for product: Wardrobes & Storage
+ Clicked on button: //div[@class="pip-buy-module__buttons"]
+ Added product 3 to cart
+ Clicked on button: (//span[@class="cart-agent-btn__label"])[2]
+ Clicked on button: a[data-tracking-label="shopping-bag"]
+ Clicked on button: a[data-tracking-label="shopping-bag"]
+ Clicked on button: //span[@class="cart-ingka-accordion-item-header__title-wrapper"]
+ Filled input: //input[@id="discountCode"]
+ Clicked on button: //button[@class="cart-ingka-btn cart-ingka-btn--small cart-ingka-btn--primary _button_3mtui_14"]
+ Clicked on button: //button[@class="cart-ingka-btn cart-ingka-btn--small cart-ingka-btn--primary _button_3mtui_14"]
+Discount Error Message: Please enter a valid discount code.
+Test execution completed

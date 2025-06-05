@@ -1,0 +1,90 @@
+ Failed to click button: //div[@class="plp-filter-bar__options"]//button[8] ExpectError: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('//div[@class="plp-filter-bar__options"]//button[8]')
+Expected: visible
+Received: hidden
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for locator('//div[@class="plp-filter-bar__options"]//button[8]')
+    9 × locator resolved to <button aria-haspopup="true" aria-expanded="false" class="plp-pill plp-pill--small plp-pill--trailing-icon plp-pill--hide">…</button>
+      - unexpected value "hidden"
+
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:25:45)
+    at ProductPage.extractWardrobes (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\productPage.js:64:30)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:64:31
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:63:9 {
+  matcherResult: {
+    message: '\x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+      '\n' +
+      `Locator: locator('//div[@class="plp-filter-bar__options"]//button[8]')\n` +
+      'Expected: visible\n' +
+      'Received: hidden\n' +
+      'Call log:\n' +
+      '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+      `\x1B[2m  - waiting for locator('//div[@class="plp-filter-bar__options"]//button[8]')\x1B[22m\n` +
+      '\x1B[2m    9 × locator resolved to <button aria-haspopup="true" aria-expanded="false" class="plp-pill plp-pill--small plp-pill--trailing-icon plp-pill--hide">…</button>\x1B[22m\n' +
+      '\x1B[2m      - unexpected value "hidden"\x1B[22m\n',
+    pass: false,
+    actual: 'hidden',
+    name: 'toBeVisible',
+    expected: 'visible',
+    log: [
+      '  - expect.toBeVisible with timeout 5000ms',
+      `  - waiting for locator('//div[@class="plp-filter-bar__options"]//button[8]')`,
+      '    9 × locator resolved to <button aria-haspopup="true" aria-expanded="false" class="plp-pill plp-pill--small plp-pill--trailing-icon plp-pill--hide">…</button>',
+      '      - unexpected value "hidden"'
+    ],
+    timeout: 5000
+  },
+  [Symbol(step)]: {
+    stepId: 'expect@38',
+    category: 'expect',
+    title: 'expect.toBeVisible',
+    params: { expected: [Object] },
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 25,
+      column: 45,
+      function: 'clickButton'
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'expect@38'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748519327335,
+    error: {
+      message: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('//div[@class="plp-filter-bar__options"]//button[8]')\n` +
+        'Expected: visible\n' +
+        'Received: hidden\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('//div[@class="plp-filter-bar__options"]//button[8]')\x1B[22m\n` +
+        '\x1B[2m    9 × locator resolved to <button aria-haspopup="true" aria-expanded="false" class="plp-pill plp-pill--small plp-pill--trailing-icon plp-pill--hide">…</button>\x1B[22m\n' +
+        '\x1B[2m      - unexpected value "hidden"\x1B[22m\n',
+      stack: 'Error: \x1B[31mTimed out 5000ms waiting for \x1B[39m\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m\n' +
+        '\n' +
+        `Locator: locator('//div[@class="plp-filter-bar__options"]//button[8]')\n` +
+        'Expected: visible\n' +
+        'Received: hidden\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 5000ms\x1B[22m\n' +
+        `\x1B[2m  - waiting for locator('//div[@class="plp-filter-bar__options"]//button[8]')\x1B[22m\n` +
+        '\x1B[2m    9 × locator resolved to <button aria-haspopup="true" aria-expanded="false" class="plp-pill plp-pill--small plp-pill--trailing-icon plp-pill--hide">…</button>\x1B[22m\n' +
+        '\x1B[2m      - unexpected value "hidden"\x1B[22m\n' +
+        '\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:25:45)\n' +
+        '    at ProductPage.extractWardrobes (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\productPage.js:64:30)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:64:31\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:63:9',
+      cause: undefined
+    }
+  }
+}

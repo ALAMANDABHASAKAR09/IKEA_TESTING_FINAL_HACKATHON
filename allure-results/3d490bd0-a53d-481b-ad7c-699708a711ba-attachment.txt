@@ -1,0 +1,165 @@
+ Failed to click button: (//span[@class="cart-agent-btn__label"])[2] locator.click: Test ended.
+Call log:
+  - waiting for locator('xpath=(//span[@class="cart-agent-btn__label"])[2]')
+
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:26:37)
+    at CartPage.continueToShoppingBag (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:12:26)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:116:28
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:115:20 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@40',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 26,
+      column: 37,
+      function: 'clickButton'
+    },
+    category: 'pw:api',
+    title: 'locator.click((//span[@class="cart-agent-btn__label"])[2])',
+    apiName: 'locator.click',
+    params: {
+      selector: '(//span[@class="cart-agent-btn__label"])[2]',
+      strict: true
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@40'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748922910706,
+    error: {
+      message: 'Error: locator.click: Test ended.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('xpath=(//span[@class="cart-agent-btn__label"])[2]')\x1B[22m\n`,
+      stack: 'Error: locator.click: Test ended.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('xpath=(//span[@class="cart-agent-btn__label"])[2]')\x1B[22m\n` +
+        '\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:26:37)\n' +
+        '    at CartPage.continueToShoppingBag (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:12:26)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:116:28\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:115:20',
+      cause: undefined
+    }
+  }
+}
+ Failed to click button: a[data-tracking-label="shopping-bag"] locator.click: Target page, context or browser has been closed
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:26:37)
+    at CartPage.navigateToCart (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:16:26)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:120:28
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:119:20 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@47',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 26,
+      column: 37,
+      function: 'clickButton'
+    },
+    category: 'pw:api',
+    title: 'locator.click(a[data-tracking-label="shopping-bag"])',
+    apiName: 'locator.click',
+    params: { selector: 'a[data-tracking-label="shopping-bag"]', strict: true },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@47'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748922910714,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed',
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:26:37)\n' +
+        '    at CartPage.navigateToCart (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:16:26)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:120:28\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:119:20',
+      cause: undefined
+    }
+  }
+}
+ Failed to click button: a[data-tracking-label="shopping-bag"] locator.click: Target page, context or browser has been closed
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:26:37)
+    at CartPage.navigateToCart (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:16:26)
+    at CartPage.applyDiscount (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:39:24)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:121:28
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:119:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@48',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 26,
+      column: 37,
+      function: 'clickButton'
+    },
+    category: 'pw:api',
+    title: 'locator.click(a[data-tracking-label="shopping-bag"])',
+    apiName: 'locator.click',
+    params: { selector: 'a[data-tracking-label="shopping-bag"]', strict: true },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@48'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748922910721,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed',
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:26:37)\n' +
+        '    at CartPage.navigateToCart (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:16:26)\n' +
+        '    at CartPage.applyDiscount (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:39:24)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:121:28\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:119:9',
+      cause: undefined
+    }
+  }
+}
+ Error applying discount: page.waitForTimeout: Target page, context or browser has been closed
+    at waitForTimeout (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:19:16)
+    at CartPage.applyDiscount (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:40:33)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:121:13
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:119:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@49',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 19,
+      column: 16,
+      function: 'waitForTimeout'
+    },
+    category: 'pw:api',
+    title: 'page.waitForTimeout',
+    apiName: 'page.waitForTimeout',
+    params: { timeout: 2000 },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@49'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748922910728,
+    error: {
+      message: 'Error: page.waitForTimeout: Target page, context or browser has been closed',
+      stack: 'Error: page.waitForTimeout: Target page, context or browser has been closed\n' +
+        '    at waitForTimeout (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:19:16)\n' +
+        '    at CartPage.applyDiscount (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:40:33)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:121:13\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:119:9',
+      cause: undefined
+    }
+  }
+}

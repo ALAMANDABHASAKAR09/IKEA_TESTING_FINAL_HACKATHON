@@ -1,0 +1,50 @@
+Cookies popup accepted
+Cookies popup accepted
+Navigated to IKEA homepage
+ Clicked on button: a[aria-label="Enter postal code"]
+ Highlighted element: input[aria-describedby="hnf-postalcode-helper"]
+ Filled input: input[aria-describedby="hnf-postalcode-helper"]
+ Clicked on button: //button[@type="button"]//span[text()="Save"]
+ Pincode 500001 set successfully
+ Highlighted element: //input[@id="ikea-search-input"]
+ Filled input: //input[@id="ikea-search-input"]
+ Clicked on button: //div[@class="search-box-wrapper"]//button[@type="submit"]
+ Searched for product: Wardrobes
+ Clicked on button: //div[@class="plp-filter-bar__options"]//button[7]
+ Clicked on button: //span[text()="Wardrobes"]
+ Clicked on button: //div[@class="plp-filter-bar__options"]//button[8]
+ Clicked on button: (//span[@class="plp-checkbox--subtle plp-checkbox"])[2]/span
+ Extracted wardrobe details
+[
+  { name: 'PAX / MEHAMN/AULI' },
+  { name: 'PAX / AULI' },
+  { name: 'PAX / AULI' },
+  { name: 'PAX / MEHAMN/AULI' },
+  { name: 'PAX / AULI' },
+  { name: 'PAX / MEHAMN/AULI' },
+  { name: 'PAX / FARDAL/ÅHEIM' },
+  { name: 'PAX / FARDAL/ÅHEIM' },
+  { name: 'PAX / FARDAL/ÅHEIM' },
+  { name: 'PAX / ÅHEIM' },
+  { name: 'PAX / FARDAL' },
+  { name: 'PAX / VIKANES' },
+  { name: 'PAX / FORSAND' },
+  { name: 'PAX / FORSAND' },
+  { name: 'PAX / ÅHEIM' },
+  { name: 'PAX / ÅHEIM' },
+  { name: 'PAX / FORSAND/ÅHEIM' },
+  { name: 'PAX / TYSSEDAL' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / GULLABERG' },
+  { name: 'PAX / VIKANES' },
+  { name: 'PAX / MISTUDDEN' },
+  { name: 'PAX / GRIMO' },
+  { name: 'PAX / BERGSBO' },
+  { name: 'PAX / BERGSBO' },
+  { name: 'PAX / MISTUDDEN' },
+  { name: 'PAX / MISTUDDEN' },
+  { name: 'PAX / FORSAND' },
+  { name: 'PAX / STORKLINTA' }
+]
+Data successfully written to wardrobe_data.json
+Test execution completed

@@ -1,0 +1,93 @@
+ Failed to click button: a[data-tracking-label="shopping-bag"] locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('a[data-tracking-label="shopping-bag"]')
+    - locator resolved to <a rel="nofollow" aria-label="Shopping bag, 2 items" data-tracking-label="shopping-bag" href="https://www.ikea.com/in/en/shoppingcart/" class="hnf-btn hnf-btn--small hnf-btn--icon-tertiary">…</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:26:37)
+    at CartPage.navigateToCart (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:16:9)
+    at CartPage.getCartSummary (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:22:13)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:90:33
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:89:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@62',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 26,
+      column: 37,
+      function: 'clickButton'
+    },
+    category: 'pw:api',
+    title: 'locator.click(a[data-tracking-label="shopping-bag"])',
+    apiName: 'locator.click',
+    params: { selector: 'a[data-tracking-label="shopping-bag"]', strict: true },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@62'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748519629379,
+    error: {
+      message: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('a[data-tracking-label="shopping-bag"]')\x1B[22m\n` +
+        '\x1B[2m    - locator resolved to <a rel="nofollow" aria-label="Shopping bag, 2 items" data-tracking-label="shopping-bag" href="https://www.ikea.com/in/en/shoppingcart/" class="hnf-btn hnf-btn--small hnf-btn--icon-tertiary">…</a>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n',
+      stack: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('a[data-tracking-label="shopping-bag"]')\x1B[22m\n` +
+        '\x1B[2m    - locator resolved to <a rel="nofollow" aria-label="Shopping bag, 2 items" data-tracking-label="shopping-bag" href="https://www.ikea.com/in/en/shoppingcart/" class="hnf-btn hnf-btn--small hnf-btn--icon-tertiary">…</a>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:26:37)\n' +
+        '    at CartPage.navigateToCart (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:16:9)\n' +
+        '    at CartPage.getCartSummary (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:22:13)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:90:33\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:89:9',
+      cause: undefined
+    }
+  }
+}
+ Error fetching Cart Summary: expect.toBeVisible: Target page, context or browser has been closed
+    at CartPage.getCartSummary (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:23:70)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:90:33
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:89:9 {
+  [Symbol(step)]: {
+    stepId: 'expect@63',
+    category: 'expect',
+    title: 'expect.toBeVisible',
+    params: undefined,
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js',
+      line: 23,
+      column: 70,
+      function: 'CartPage.getCartSummary'
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'expect@63'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748519629393,
+    error: {
+      message: 'Error: expect.toBeVisible: Target page, context or browser has been closed',
+      stack: 'Error: expect.toBeVisible: Target page, context or browser has been closed\n' +
+        '    at CartPage.getCartSummary (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:23:70)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:90:33\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:89:9',
+      cause: undefined
+    }
+  }
+}

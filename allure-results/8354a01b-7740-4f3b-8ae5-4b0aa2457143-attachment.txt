@@ -1,0 +1,47 @@
+ Error fetching Cart Summary: locator.innerText: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//div[@class="_sidebarGrid_dinm1_6"]//span[@class="cart-ingka-price__integer"])[2]')
+
+    at CartPage.getCartSummary (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:24:81)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:90:33
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:89:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@60',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js',
+      line: 24,
+      column: 81,
+      function: 'CartPage.getCartSummary'
+    },
+    category: 'pw:api',
+    title: 'locator.innerText((//div[@class="_sidebarGrid_dinm1_6"]//span[@class="cart-ingka-price__integer"])[2])',
+    apiName: 'locator.innerText',
+    params: {
+      selector: '(//div[@class="_sidebarGrid_dinm1_6"]//span[@class="cart-ingka-price__integer"])[2]',
+      strict: true
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@60'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748520021349,
+    error: {
+      message: 'Error: locator.innerText: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('xpath=(//div[@class="_sidebarGrid_dinm1_6"]//span[@class="cart-ingka-price__integer"])[2]')\x1B[22m\n`,
+      stack: 'Error: locator.innerText: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('xpath=(//div[@class="_sidebarGrid_dinm1_6"]//span[@class="cart-ingka-price__integer"])[2]')\x1B[22m\n` +
+        '\n' +
+        '    at CartPage.getCartSummary (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:24:81)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:90:33\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:89:9',
+      cause: undefined
+    }
+  }
+}

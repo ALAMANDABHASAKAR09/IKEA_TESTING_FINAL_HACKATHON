@@ -1,0 +1,44 @@
+ Error applying discount: locator.textContent: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//span[@id="discount-code__error"]')
+
+    at CartPage.applyDiscount (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:52:93)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:121:13
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:119:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@51',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js',
+      line: 52,
+      column: 93,
+      function: 'CartPage.applyDiscount'
+    },
+    category: 'pw:api',
+    title: 'locator.textContent(//span[@id="discount-code__error"])',
+    apiName: 'locator.textContent',
+    params: { selector: '//span[@id="discount-code__error"]', strict: true },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@51'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748922785667,
+    error: {
+      message: 'Error: locator.textContent: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('//span[@id="discount-code__error"]')\x1B[22m\n`,
+      stack: 'Error: locator.textContent: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('//span[@id="discount-code__error"]')\x1B[22m\n` +
+        '\n' +
+        '    at CartPage.applyDiscount (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\cartpage.js:52:93)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:121:13\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:119:9',
+      cause: undefined
+    }
+  }
+}

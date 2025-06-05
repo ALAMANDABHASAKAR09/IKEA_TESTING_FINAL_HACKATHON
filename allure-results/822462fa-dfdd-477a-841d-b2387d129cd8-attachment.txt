@@ -1,0 +1,5 @@
+Navigated to IKEA homepage
+Added product 3 to cart
+ Clicked on button: button[aria-label="Go to shopping bag"]
+Test execution completed
+Added product 1 to cart

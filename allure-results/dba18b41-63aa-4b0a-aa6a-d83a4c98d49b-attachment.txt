@@ -1,0 +1,10 @@
+Navigated to IKEA homepage
+Added product 3 to cart
+ Clicked on button: button[aria-label="Go to shopping bag"]
+Added product 1 to cart
+ Clicked on button: button[aria-label="Go to shopping bag"]
+ Clicked on button: a[data-tracking-label="shopping-bag"]
+🛒 Cart Total Value: 24,990
+Total Value: 24,990
+Data successfully written to cart_summary.json
+Test execution completed

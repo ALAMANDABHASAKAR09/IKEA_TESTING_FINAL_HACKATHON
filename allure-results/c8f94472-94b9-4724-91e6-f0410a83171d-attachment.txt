@@ -1,0 +1,169 @@
+ Failed to click button: //span[text()="Wardrobe with sliding doors"] locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//span[text()="Wardrobe with sliding doors"]')
+
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:26:37)
+    at ProductPage.extractWardrobes (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\productPage.js:63:30)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:75:31
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:74:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@37',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 26,
+      column: 37,
+      function: 'clickButton'
+    },
+    category: 'pw:api',
+    title: 'locator.click(//span[text()="Wardrobe with sliding doors"])',
+    apiName: 'locator.click',
+    params: {
+      selector: '//span[text()="Wardrobe with sliding doors"]',
+      strict: true
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@37'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748868630446,
+    error: {
+      message: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('//span[text()="Wardrobe with sliding doors"]')\x1B[22m\n`,
+      stack: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('//span[text()="Wardrobe with sliding doors"]')\x1B[22m\n` +
+        '\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:26:37)\n' +
+        '    at ProductPage.extractWardrobes (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\productPage.js:63:30)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:75:31\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:74:9',
+      cause: undefined
+    }
+  }
+}
+ Failed to click button: //div[@class="plp-filter-bar__options"]//button[8] locator.click: Target page, context or browser has been closed
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:26:37)
+    at ProductPage.extractWardrobes (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\productPage.js:64:30)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:75:31
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:74:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@43',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 26,
+      column: 37,
+      function: 'clickButton'
+    },
+    category: 'pw:api',
+    title: 'locator.click(//div[@class="plp-filter-bar__options"]//button[8])',
+    apiName: 'locator.click',
+    params: {
+      selector: '//div[@class="plp-filter-bar__options"]//button[8]',
+      strict: true
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@43'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748868630470,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed',
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:26:37)\n' +
+        '    at ProductPage.extractWardrobes (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\productPage.js:64:30)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:75:31\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:74:9',
+      cause: undefined
+    }
+  }
+}
+ Failed to click button: (//span[@class="plp-checkbox--subtle plp-checkbox"])[2]/span locator.click: Target page, context or browser has been closed
+    at clickButton (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:26:37)
+    at ProductPage.extractWardrobes (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\productPage.js:65:30)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:75:31
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:74:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@44',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 26,
+      column: 37,
+      function: 'clickButton'
+    },
+    category: 'pw:api',
+    title: 'locator.click((//span[@class="plp-checkbox--subtle plp-checkbox"])[2]/span)',
+    apiName: 'locator.click',
+    params: {
+      selector: '(//span[@class="plp-checkbox--subtle plp-checkbox"])[2]/span',
+      strict: true
+    },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@44'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748868630489,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed',
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        '    at clickButton (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:26:37)\n' +
+        '    at ProductPage.extractWardrobes (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\productPage.js:65:30)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:75:31\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:74:9',
+      cause: undefined
+    }
+  }
+}
+ Error extracting wardrobes: page.waitForTimeout: Target page, context or browser has been closed
+    at waitForTimeout (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\utils\dataUtils.js:19:16)
+    at ProductPage.extractWardrobes (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\productPage.js:66:33)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:75:31
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:74:9 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@45',
+    location: {
+      file: 'C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js',
+      line: 19,
+      column: 16,
+      function: 'waitForTimeout'
+    },
+    category: 'pw:api',
+    title: 'page.waitForTimeout',
+    apiName: 'page.waitForTimeout',
+    params: { timeout: 2000 },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@45'
+    },
+    complete: [Function: complete],
+    endWallTime: 1748868630506,
+    error: {
+      message: 'Error: page.waitForTimeout: Target page, context or browser has been closed',
+      stack: 'Error: page.waitForTimeout: Target page, context or browser has been closed\n' +
+        '    at waitForTimeout (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\utils\\dataUtils.js:19:16)\n' +
+        '    at ProductPage.extractWardrobes (C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\pages\\productPage.js:66:33)\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:75:31\n' +
+        '    at C:\\Users\\2397826\\OneDrive - Cognizant\\Documents\\Final Hackathon\\tests\\main.spec.js:74:9',
+      cause: undefined
+    }
+  }
+}

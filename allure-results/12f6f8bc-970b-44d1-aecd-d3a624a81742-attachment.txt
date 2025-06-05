@@ -1,0 +1,16 @@
+ Error applying discount: ReferenceError: fillInput is not defined
+    at CartPage.applyDiscount (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\pages\cartpage.js:38:13)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:110:13
+    at TestStepInfoImpl._runStepBody (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\testInfo.js:390:14)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\common\testType.js:244:20
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\common\testType.js:242:18
+    at TestTypeImpl._step (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\common\testType.js:239:12)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\tests\main.spec.js:108:9
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\workerMain.js:304:9
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\testInfo.js:277:11
+    at TimeoutManager.withRunnable (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\testInfo.js:275:7)
+    at C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\workerMain.js:302:7
+    at WorkerMain._runTest (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\workerMain.js:277:5)
+    at WorkerMain.runTestGroup (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\worker\workerMain.js:193:11)
+    at process.<anonymous> (C:\Users\2397826\OneDrive - Cognizant\Documents\Final Hackathon\node_modules\playwright\lib\common\process.js:70:22)
